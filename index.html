@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Seedling Pages · Therapeutic Studio</title>
-<meta name="description" content="Nine pages to attend to, fold into a seedling pot, and give back to the ground. A creative care practice from Therapeutic Studio, where the seed is the other body." />
+<meta name="description" content="Nine wordless pages to attend to, fold into a seedling pot, sow and weave. A creative care practice from Therapeutic Studio." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
@@ -81,83 +81,94 @@
   }
   @media (prefers-reduced-motion:reduce){*{transition:none !important;animation:none !important;}}
 
-  .cards-section{margin:56px 0 20px;}
-  .cards-head{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--stone);font-weight:600;margin:0 0 22px;}
-  .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
-  .card{position:relative;display:flex;flex-direction:column;justify-content:flex-end;aspect-ratio:3/4;border-radius:6px;
-    overflow:hidden;text-decoration:none;color:#fff;background:var(--ink-strong);}
-  .card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s var(--ease);}
-  .card::after{content:"";position:absolute;inset:0;
-    background:linear-gradient(to top,rgba(30,28,28,.86) 0%,rgba(30,28,28,.42) 50%,rgba(30,28,28,.14) 100%);}
-  .card:hover img{transform:scale(1.04);}
-  .card .c-inner{position:relative;z-index:1;padding:20px 18px 22px;}
-  .card h3{font-size:19px;font-weight:500;letter-spacing:-.01em;margin:0 0 8px;}
-  .card p{font-size:12.5px;line-height:1.5;margin:0 0 14px;color:rgba(255,255,255,.9);}
-  .card .more{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:#fff;
-    border:1px solid rgba(255,255,255,.55);border-radius:100px;padding:6px 13px;display:inline-block;transition:all .2s var(--ease);}
-  .card:hover .more{background:#fff;color:var(--ink-strong);border-color:#fff;}
-  .workbook{margin:64px 0 8px;padding:40px 0 8px;border-top:1px solid var(--hair);
-    display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;}
-  .workbook img{display:block;width:100%;height:auto;border-radius:6px;}
-  .workbook p{font-size:15.5px;color:var(--ink);margin:0 0 20px;}
-  .workbook .row{display:flex;flex-wrap:wrap;gap:10px;}
-  .workbook .cap{font-size:12px;color:var(--stone);margin:16px 0 0;}
-  @media(max-width:860px){.cards{grid-template-columns:1fr 1fr;}}
-  @media(max-width:720px){.workbook{grid-template-columns:1fr;gap:24px;}}
-  @media(max-width:460px){.cards{grid-template-columns:1fr;} .card{aspect-ratio:4/3;}}
+  .ln{fill:none;stroke:#454344;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+  .sh{stroke:#454344;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round}
+  .th{fill:none;stroke:#454344;stroke-width:1.1;stroke-linecap:round}
+  .cr{fill:none;stroke:#454344;stroke-width:1.3;stroke-dasharray:5 4;stroke-linecap:round;stroke-linejoin:round}
+  .ar{fill:none;stroke:#454344;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+
+  .essay{max-width:680px;padding:6px 0 8px;}
+  .essay p{font-size:18px;line-height:1.7;margin:0 0 24px;color:var(--ink);}
+  .essay p:first-of-type{color:var(--ink-strong);}
+  .essay .fig-stack{margin:40px 0 44px;max-width:420px;}
+  .essay .fig-stack.wide{max-width:560px;}
+  section.block{border-top:1px solid var(--hair);margin-top:56px;padding-top:8px;scroll-margin-top:16px;}
+  .sub{font-size:14.5px;color:var(--ink);margin:0 0 18px;max-width:680px;}
+  .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:4px 0 16px;max-width:560px;}
+  .tile{aspect-ratio:8.5/11;border:1px dashed var(--hair);border-radius:6px;background:var(--panel);display:flex;flex-direction:column;
+    align-items:center;justify-content:center;gap:6px;color:var(--stone);text-decoration:none;position:relative;overflow:hidden;}
+  .tile .n{font-size:22px;font-weight:500;color:var(--ink);} .tile .s{font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;}
+  a.tile{border-style:solid;background:var(--paper);} a.tile:hover{border-color:var(--stone);}
+  a.tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+  a.tile .n,a.tile .s{position:relative;background:rgba(255,255,255,.86);padding:0 6px;border-radius:4px;}
+  .row{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 0;}
+  .steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:4px 0 12px;}
+  .step{border:1px solid var(--hair);border-radius:14px;padding:16px 16px 18px;}
+  .step svg{display:block;width:100%;height:auto;max-height:190px;}
+  .step p{margin:10px 0 0;font-size:15px;color:var(--ink);}
+  .num{display:inline-block;font-weight:600;color:var(--ink-strong);margin-right:9px;}
+  .cites{max-width:760px;font-size:13.5px;line-height:1.6;color:var(--ink);}
+  .cites ol{margin:0 0 14px;padding-left:20px;} .cites li{margin:0 0 9px;overflow-wrap:anywhere;}
+  .cites .what{color:var(--stone);} .cites p{margin:0 0 10px;}
+  @media(max-width:860px){.steps{grid-template-columns:repeat(2,minmax(0,1fr));}}
+  @media(max-width:460px){.steps{grid-template-columns:1fr;} .essay p{font-size:17px;}}
 </style>
 </head>
 <body>
   <div class="wrap">
-    <nav class="topbar" aria-label="Seedling Pages"><a class="mark" href="index.html">Seedling&nbsp;Pages</a><div class="navlinks"><a href="seed-atlas.html">Seed Atlas</a><a href="knowing-seed.html">Knowing Seed</a><a href="practicing.html">Practicing</a><a href="the-pages.html">The Pages</a></div></nav>
-
+    <nav class="topbar" aria-label="Seedling Pages"><a class="mark" href="index.html">Seedling&nbsp;Pages</a><div class="navlinks"><a href="index.html#pages">The pages</a><a href="index.html#practice">The practice</a><a href="gratitude.html">Gratitude</a></div></nav>
     <header class="hero">
       <p class="eyebrow"><span>Therapeutic Studio</span><span class="status">A paper practice</span></p>
-      <h1>Seedling Pages</h1>
-      <p class="lede">Nine pages to attend to, fold, and give back to the ground. Therapeutic Studio works with the natural world as company for what we feel — not as a symbol for it, but as a body that has been through something like it, for far longer than we have. A seed has been through a great deal of waiting. It knows something about holding a whole life closed and still until the time is right. Here, we make something beside it, and then let the making go where the seed goes.</p>
+      <h1>The Root Goes First</h1>
     </header>
 
-    <figure class="fig-side"><img src="images/hands-leaves.jpg" alt="Several hands reach into dark green leaves and faded orange blooms." loading="lazy" /><figcaption>Hands from more than one person reach into a shrub of glossy dark leaves, touching a leaf here and a spent orange bloom there. The flowers are dry and curled at the end of their season.</figcaption></figure>
+    <article class="essay">
+      <p>Put a seed in your palm and it will not help you. It has no warmth of its own, and so little weight that you look down to check it is still there. You could carry it in a coat pocket through a whole winter and take it out in March looking exactly as it did in November, and nothing about it would tell you whether you had been carrying a life or a small brown stone.</p>
+      <p>It is a life. Inside the coat there is a plant, already made, lying beside the food that will see it through its first days. The coat is closed over them both. For as long as it stays closed, the seed does what looks from where we stand like nothing at all.</p>
+      <p>Botanists use the word germination more narrowly than the rest of us do. For them it starts when water gets in, and it is over when the first root pushes through the coat. The stem, the leaves, the pale hook that lifts a crumb of soil on its back: these come afterward and go by other names. Germination itself takes place wholly out of sight. It produces a root, and the root goes down.</p>
+      <p>I have not been able to put this away since I learned it. The first act of a seed is to go further into the dark it was already in. It makes no move toward the light until it has taken hold. And for a good while after it has begun, the ground above it looks the way it looked the week before.</p>
+      <p>Some seeds will not do even that. Water, warmth, a mild spring, every condition a seed is said to need, and they stay shut. This is called dormancy, and it does not mean the seed is dead or spoiled. A dormant seed is a living one that something in its own body is holding back. Many are waiting for a winter to pass over them first.</p>
+      <p>A date seed was dug from the ruins of Masada, on its rock above the Dead Sea, and radiocarbon dating placed it in the first century. It was planted. It came up. The researchers followed the seedling for twenty-six months and reported that it grew as date seedlings ordinarily grow. On any day in the nearly two thousand years before that, it would have looked like it was over.</p>
+      <figure class="fig-stack"><img src="images/ice-flowers.jpg" alt="Pale flowers on thorny stems frozen inside clear ice." loading="lazy" /><figcaption>Cream-coloured flowers and their thorny green stems hang suspended in ice. Cracks and bubbles catch the light around them, and nothing has moved since the water set.</figcaption></figure>
+      <p>People go quiet like that too. For months at a time we show no movement, and when someone asks how we are we say fine, because there is no event to report. The seed proves nothing about us. It has made me slower to say what I am looking at.</p>
+      <p>Seedling Pages is nine sheets of paper with lines on them and no words. Each one started as a plant I live beside. I drew it, and then drew the drawing from nearer, and nearer again, until I was too close to say what I was looking at. What is left has no name, and I have not given it one.</p>
+      <figure class="fig-stack"><img src="images/hands-table.jpg" alt="A pair of hands rests loosely clasped on a pale wooden table." loading="lazy" /><figcaption>Seen from over the shoulder, a person's hands rest together on a pale wooden table, fingers loosely curled. Their sleeves are rolled back and the light is soft and warm.</figcaption></figure>
+      <p>Print a single page and put it on the table. Look at it before you pick up a pencil. The lines run thick in one corner and leave a clearing in another, and your eye will already have gone somewhere without asking you. Start there. A pencil drawn along one line makes a small dry sound. Watercolour on ordinary paper follows the damp and stops at an edge you did not choose. For some minutes you are a person filling in a page. Then, on a good day, the table goes, and the question of whether you are doing it well goes with it, and there is only the line and the place the line is heading. You will not notice this while it is happening. You notice afterward, the way you find out it has stopped raining some time after it did.</p>
+      <p>It does not always come. When it doesn’t, stop, and leave the rest of the page bare. A page with one corner coloured is finished.</p>
+      <p>When the paper is dry, run a wet brush along the dotted line near the bottom and tear. The strip comes away with a soft, furred edge. Keep it. What remains folds, corners to the centre, into a box about the size of a cupped hand. Fill it with soil. Ask someone nearby who knows plants what belongs in the ground where you live, and press one of those seeds in.</p>
+      <p>Then the box goes into the earth: the lines, the colour, the hour you spent. You cover it over and stand up, and there is nothing to look at. You cannot check on what you made. I can’t promise you a seedling, either. Some seeds wait a year. Some never come up.</p>
+      <figure class="fig-stack wide"><img src="images/pine-needles.jpg" alt="A person in a white shirt holds a few pine needles in an open palm, in black and white." loading="lazy" /><figcaption>A person sits on the grass with pine needles gathered in one open hand. Their other hand passes through the foreground, blurred, as if it has just let something go.</figcaption></figure>
+      <p>What you have is the strip. After a few pages you have a few, and they weave, over and under, into a small square of colour with no picture in it.</p>
+      <p>And under the place where you knelt, with no sign of it at the surface, a root may have started down.</p>
+    </article>
 
-    <section class="essay">
-      <h2>Why the seed</h2>
-      <p><a class="inline" href="https://www.therapeuticstudio.ca/other-bodies">Other bodies</a> of the natural world are not metaphors for what we feel. They are sites of wisdom. Each has been doing something structurally like a human emotion for far longer than there have been humans to feel it — and sitting with what it actually does can make your own version of that emotion easier to be with. Not easier to solve. Easier to keep company with.</p>
-      <p>The seed belongs in that company. It is a whole plant, very small, packed beside the food it will need and closed inside a coat. The coat keeps water out, and so the seed waits — not because nothing is alive in it, but because the time is not yet right. When water does come in, what was paused begins to work again, and the first thing to leave the seed is not a leaf. It is the root. Before anything shows above the soil, the seed has already gone down into the dark and taken hold there. <a class="inline" href="knowing-seed.html#seed">Where this comes from.</a></p>
-      <p>So a sitting with these pages becomes a place to let something wait without calling it stuck. You attend to a page, and then you fold it, fill it, and sow it. Nothing is kept whole, judged, or performed. The page goes into the ground — and whatever came up in you while you made it is allowed to go on changing, out of sight, before there is anything to show for it.</p>
-      <p>This is an invitation, peer to peer. I am learning as I go, a student among older practices — a paper box that people in Japan and in Europe have folded for generations, and ways of making with care and then giving back that others have kept far longer than I have known of them — naming where they come from and staying a learner rather than claiming mastery. You don't need to know how to draw. You need a page, a little soil, <em>a seed that belongs where you live,</em> and a willingness to notice what arrives.</p>
-    </section>
-
-    <figure class="fig-stack"><img src="images/offering-dish.jpg" alt="A person holds out a small dark dish of dried leaves while another hand steadies it." loading="lazy" /><figcaption>A person in a tan linen shirt offers a small dark dish piled with dried, sage-like leaves. A second hand reaches in from the side to support it, so the dish rests between them.</figcaption></figure>
-
-    <section class="essay">
-      <h2>A note on the medium</h2>
-      <p>The making here is done on ordinary paper — the kind that comes out of a home printer, nothing more. Not because it is cheap, but because of what paper is. It was a plant once. It takes a mark, holds a crease, tears along a wet line, and softens when it is damp. It can be finished and still be given away. That last part is the point.</p>
-      <p>Each page began as a photograph of a plant I have lived beside. I drew each one, and then drew the drawing, moving closer each time, until what was left was a small part of a body seen from very near. They have no names here. We are too close to them for names. So this isn't colouring in. There is no picture to complete, and nothing to get right. Attend to a page with whatever you have — pencil, watercolour, ink, nothing but your eyes — in whatever way this moment needs.</p>
-      <p>And then most of it goes back. The page folds into a small pot, and the pot goes into the soil with a seed in it. One strip of each page stays with you. When you have a few, you weave them. That is the whole of what you keep: not the picture, but a trace that you were there.</p>
-    </section>
-
-    <section class="cards-section">
-      <p class="cards-head">Four ways in</p>
-      <div class="cards">
-        <a class="card" href="the-pages.html"><img src="images/dried-leaf.jpg" alt="" loading="lazy" /><div class="c-inner"><h3>The Pages</h3><p>Nine companions, drawn very close. Print one at a time, attend to it however this moment needs, and let it go.</p><span class="more">See more</span></div></a>
-        <a class="card" href="practicing.html"><img src="images/dried-sprig.jpg" alt="" loading="lazy" /><div class="c-inner"><h3>Practicing</h3><p>How to fold it, slowly. Nine pictures: tear the strip, fold the box, sow the seed, and weave what stays.</p><span class="more">See more</span></div></a>
-        <a class="card" href="knowing-seed.html"><img src="images/dish-window-light.jpg" alt="" loading="lazy" /><div class="c-inner"><h3>Knowing Seed</h3><p>What does a seed do while it waits? Notes on seed, paper, the fold and the research — each with its sources, and its limits.</p><span class="more">See more</span></div></a>
-        <a class="card" href="seed-atlas.html"><img src="images/moss-bark.jpg" alt="" loading="lazy" /><div class="c-inner"><h3>Seed Atlas</h3><p>When to sow, and where to find seed that belongs. A map of regions, each with its own season and its own keepers.</p><span class="more">See more</span></div></a>
+    <section class="block" id="pages" aria-label="The nine pages">
+      <p class="kicker">The nine pages</p>
+      <p class="sub">The drawings are being made by hand and will appear here as each is finished. Until then, the blank page carries the same fold lines. Print on plain, uncoated paper at full size.</p>
+      <div class="grid"><div class="tile"><span class="n">01</span><span class="s">Being drawn</span></div><div class="tile"><span class="n">02</span><span class="s">Being drawn</span></div><div class="tile"><span class="n">03</span><span class="s">Being drawn</span></div><div class="tile"><span class="n">04</span><span class="s">Being drawn</span></div><div class="tile"><span class="n">05</span><span class="s">Being drawn</span></div><div class="tile"><span class="n">06</span><span class="s">Being drawn</span></div><div class="tile"><span class="n">07</span><span class="s">Being drawn</span></div><div class="tile"><span class="n">08</span><span class="s">Being drawn</span></div><div class="tile"><span class="n">09</span><span class="s">Being drawn</span></div></div>
+      <div class="row">
+        <a class="dl" href="files/seedling-page-blank-letter.pdf" download>Blank page · Letter</a>
+        <a class="dl quiet" href="files/seedling-page-blank-a4.pdf" download>Blank page · A4</a>
       </div>
     </section>
 
-    <section class="workbook">
-      <div><img src="images/workbook-cover.png" alt="Cover of the Seedling Pages Workbook: a rectangle divided into a square and a strip, crossed by overlapping arcs drawn in black and grey line." loading="lazy" style="border:1px solid var(--hair)" /></div>
-      <div>
-        <p><a class="inline" href="files/seedling-pages-workbook.pdf" download>A printable workbook</a> — the opening pages, the practice in nine pictures, and a blank page marked with fold lines, so you can try the box before you fold a page you have attended to. The nine drawings are being made now and will be added as they are finished. Nothing to complete. Print the page you need, and begin.</p>
-        <div class="row">
-          <a class="dl" href="files/seedling-pages-workbook.pdf" download>Download the workbook</a>
-          <a class="dl quiet" href="the-pages.html">See the pages</a>
-        </div>
+    <section class="block" id="practice" aria-label="The practice in nine pictures">
+      <p class="kicker">The practice, in nine pictures</p>
+      <div class="steps"><div class="step"><svg viewBox="0 0 200 170" role="img" aria-label="Step 1: Attend to the whole page. Let it dry."><rect class="sh" x="50" y="14" width="100" height="129" fill="#ffffff"/><path class="ln" d="M50 62 C 78 40, 96 70, 118 52 S 142 44, 150 58"/><path class="sh" d="M50 86 C 74 70, 98 96, 122 78 C 134 70, 144 74, 150 82 L150 108 C 132 96, 112 118, 90 106 C 74 98, 60 104, 50 112 Z" fill="#f1efed"/><path class="ln" d="M50 36 C 70 22, 92 40, 112 26 S 140 20, 150 30"/><path class="sh" d="M50 122 C 72 112, 94 132, 118 120 C 132 113, 142 118, 150 124 L150 143 L50 143 Z" fill="#dedbd8"/><path class="ln" d="M176 152 L152 122"/><path class="sh" d="M152 122 L143 108 L156 117 Z" fill="#bdb9b6"/></svg><p><span class="num">1</span>Attend to the whole page. Let it dry.</p></div><div class="step"><svg viewBox="0 0 200 170" role="img" aria-label="Step 2: Fold the top corner across until the edges meet."><path class="cr" d="M150 14 L50 14 L50 114"/><rect class="sh" x="50" y="114" width="100" height="29" fill="#dedbd8"/><path class="sh" d="M150 14 L50 114 L150 114 Z" fill="#f1efed"/><path class="ar" d="M66 30 C 96 30, 126 60, 132 92 M123 85 L132 92 L137 81"/></svg><p><span class="num">2</span>Fold the top corner across until the edges meet.</p></div><div class="step"><svg viewBox="0 0 200 170" role="img" aria-label="Step 3: Wet the crease and tear. Keep the strip."><path class="sh" d="M150 10 L50 110 L150 110 Z" fill="#f1efed"/><path class="sh" d="M50 130 q 6.25 -4 12.5 0 t 12.5 0 t 12.5 0 t 12.5 0 t 12.5 0 t 12.5 0 t 12.5 0 t 12.5 0 V159 H50 Z" fill="#dedbd8"/><path class="sh" d="M32 96 C 25 107, 24 112, 32 117 C 40 112, 39 107, 32 96 Z" fill="#ffffff"/><path class="ar" d="M170 118 V150 M163 143 L170 150 L177 143"/></svg><p><span class="num">3</span>Wet the crease and tear. Keep the strip.</p></div><div class="step"><svg viewBox="0 0 200 170" role="img" aria-label="Step 4: Open the square. Crease the other diagonal, then bring all four corners to the centre."><rect class="sh" x="40" y="22" width="120" height="120" fill="#ffffff"/><path class="th" d="M40 22 L160 142 M160 22 L40 142"/><path class="cr" d="M100 22 L160 82 L100 142 L40 82 Z"/><path class="ar" d="M52 34 L84 66 M74 66 L84 66 L84 56"/><path class="ar" d="M148 34 L116 66 M126 66 L116 66 L116 56"/><path class="ar" d="M52 130 L84 98 M74 98 L84 98 L84 108"/><path class="ar" d="M148 130 L116 98 M126 98 L116 98 L116 108"/><circle cx="100" cy="82" r="3.5" fill="#454344"/></svg><p><span class="num">4</span>Open the square. Crease the other diagonal, then bring all four corners to the centre.</p></div><div class="step"><svg viewBox="0 0 200 170" role="img" aria-label="Step 5: Fold each edge to the centre, then open it again. All four."><rect class="sh" x="50" y="32" width="100" height="100" fill="#ffffff"/><path class="th" d="M50 32 L150 132 M150 32 L50 132"/><path class="cr" d="M50 57 H150 M50 107 H150 M75 32 V132 M125 32 V132"/><path class="ar" d="M38 34 C 26 48, 26 64, 38 78 M29 73 L38 78 L40 68"/><path class="ar" d="M38 130 C 26 116, 26 100, 38 86 M29 91 L38 86 L40 96"/></svg><p><span class="num">5</span>Fold each edge to the centre, then open it again. All four.</p></div><div class="step"><svg viewBox="0 0 200 170" role="img" aria-label="Step 6: Open two opposite flaps. Stand the two long sides up."><path class="sh" d="M100 12 L135 47 L135 117 L100 152 L65 117 L65 47 Z" fill="#ffffff"/><rect x="65" y="47" width="17.5" height="70" fill="#dedbd8"/><rect x="117.5" y="47" width="17.5" height="70" fill="#dedbd8"/><path class="th" d="M65 47 L100 82 L65 117 M135 47 L100 82 L135 117"/><path class="cr" d="M82.5 29.5 V134.5 M117.5 29.5 V134.5 M65 47 H135 M65 117 H135 M65 64.5 H135 M65 99.5 H135"/><path class="ln" d="M100 12 L135 47 L135 117 L100 152 L65 117 L65 47 Z"/><path class="ar" d="M54 100 C 43 90, 43 76, 54 66 M45 71 L54 66 L56 76"/><path class="ar" d="M146 100 C 157 90, 157 76, 146 66 M155 71 L146 66 L144 76"/></svg><p><span class="num">6</span>Open two opposite flaps. Stand the two long sides up.</p></div><div class="step"><svg viewBox="0 0 200 170" role="img" aria-label="Step 7: Lift each end. The corners tuck in; fold the point down inside."><path class="sh" d="M45 90 L115 105 L155 80 L85 65 Z" fill="#ffffff"/><path class="ln" d="M85 65 V97"/><path class="sh" d="M45 125 L115 140 L115 105 L45 90 Z" fill="#f1efed"/><path class="sh" d="M115 140 L155 115 L155 80 L115 105 Z" fill="#dedbd8"/><path class="cr" d="M115 105 L120 74 L146 32 L160 52 L155 80"/><path class="ar" d="M146 24 C 122 20, 106 48, 104 80 M96 72 L104 80 L111 71"/></svg><p><span class="num">7</span>Lift each end. The corners tuck in; fold the point down inside.</p></div><div class="step"><svg viewBox="0 0 200 170" role="img" aria-label="Step 8: Fill with soil. Sow seed native to where you live."><path class="sh" d="M45 90 L115 105 L155 80 L85 65 Z" fill="#bdb9b6"/><path class="sh" d="M45 125 L115 140 L115 105 L45 90 Z" fill="#f1efed"/><path class="sh" d="M115 140 L155 115 L155 80 L115 105 Z" fill="#dedbd8"/><path class="ln" d="M100 86 C 100 74, 101 62, 100 46"/><path class="sh" d="M100 58 C 89 56, 82 47, 82 40 C 92 41, 99 48, 100 58 Z" fill="#ffffff"/><path class="sh" d="M100 50 C 111 48, 118 39, 118 32 C 108 33, 101 40, 100 50 Z" fill="#f1efed"/><circle cx="72" cy="85" r="2.2" fill="#454344"/><circle cx="126" cy="90" r="2.2" fill="#454344"/><circle cx="112" cy="78" r="2.2" fill="#454344"/></svg><p><span class="num">8</span>Fill with soil. Sow seed native to where you live.</p></div><div class="step"><svg viewBox="0 0 200 170" role="img" aria-label="Step 9: When you are ready, weave your strips, over and under."><rect class="sh" x="51" y="10" width="26" height="150" fill="#f1efed"/><rect class="sh" x="87" y="10" width="26" height="150" fill="#ffffff"/><rect class="sh" x="123" y="10" width="26" height="150" fill="#dedbd8"/><rect class="sh" x="28" y="36" width="144" height="26" fill="#dedbd8"/><rect class="sh" x="28" y="72" width="144" height="26" fill="#bdb9b6"/><rect class="sh" x="28" y="108" width="144" height="26" fill="#f1efed"/><rect x="52" y="34.5" width="24" height="29" fill="#f1efed"/><rect x="124" y="34.5" width="24" height="29" fill="#dedbd8"/><rect x="88" y="70.5" width="24" height="29" fill="#ffffff"/><rect x="52" y="106.5" width="24" height="29" fill="#f1efed"/><rect x="124" y="106.5" width="24" height="29" fill="#dedbd8"/><path class="ln" d="M51 34 V64 M77 34 V64 M123 34 V64 M149 34 V64 M87 70 V100 M113 70 V100 M51 106 V136 M77 106 V136 M123 106 V136 M149 106 V136"/></svg><p><span class="num">9</span>When you are ready, weave your strips, over and under.</p></div></div>
+      <p class="sub" style="margin-top:14px">Raising the walls, in pictures six and seven, takes a try or two. Fold one box from a blank page first. If you used anything that will not break down, such as acrylic, permanent marker or wax crayon, lift the seedling out when you plant it and keep the paper. Plant in your own garden, a container, or a place you have been invited to plant.</p>
+      <div class="row">
+        <a class="dl" href="files/seedling-pages-workbook.pdf" download>Download the workbook</a>
       </div>
     </section>
 
-    <p class="boundary">Seedling Pages is not a diagnostic tool, a therapeutic assessment, or a replacement for professional mental health support. It is a creative care practice — a way of tending to yourself through attention, making, and the quiet company of the natural world. If you are working with difficult emotions and would like more support, please reach out to a qualified therapist or counsellor.</p>
+    <section class="block" id="sources" aria-label="Sources">
+      <p class="kicker">Sources</p>
+      <div class="cites">
+        <ol><li><span class="what">Germination and dormancy.</span> Bewley, J. D. (1997). Seed germination and dormancy. <em>The Plant Cell</em>, 9(7), 1055–1066. <a class="inline" href="https://doi.org/10.1105/tpc.9.7.1055" target="_blank" rel="noopener">doi.org/10.1105/tpc.9.7.1055</a></li><li><span class="what">The date seed from Masada.</span> Sallon, S., Solowey, E., Cohen, Y., Korchinsky, R., Egli, M., Woodhatch, I., Simchoni, O., &amp; Kislev, M. (2008). Germination, genetics, and growth of an ancient date seed. <em>Science</em>, 320(5882), 1464. <a class="inline" href="https://doi.org/10.1126/science.1153600" target="_blank" rel="noopener">doi.org/10.1126/science.1153600</a></li></ol>
+        <p>Seedling Pages is not a diagnostic tool, a therapeutic assessment, or a replacement for professional mental health support. It is a creative care practice — a way of tending to yourself through attention, making, and the quiet company of the natural world. If you are working with difficult emotions and would like more support, please reach out to a qualified therapist or counsellor.</p>
+        <p><a class="inline" href="gratitude.html">Gratitude</a>: whose work is present here.</p>
+      </div>
+    </section>
 
     <footer class="site">
       <span class="copy">© 2026 Therapeutic Studio</span>
