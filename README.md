@@ -5,7 +5,7 @@ The site for seedlingpages.ca, a creative care practice from Therapeutic Studio.
 ## Files
 
 - `index.html` — home
-- `the-pages.html` — the eighteen drawings (placeholders until they arrive)
+- `the-pages.html` — the nine drawings (placeholders until they arrive)
 - `practicing.html` — the nine pictures, sowing and weaving
 - `knowing-seed.html` — six notes with sources, and Gratitude
 - `seed-atlas.html` — the map; its region data is embedded in the page
@@ -20,7 +20,7 @@ Upload everything in this folder to the top level of the repository, then follow
 
 ## Still to come
 
-- The eighteen drawings. Each will go in a `pages/` folder as `01.pdf` and `01.jpg`, and its tile on `the-pages.html` will become a link.
+- The nine drawings. Each will go in a `pages/` folder as `01.pdf` and `01.jpg`, and its tile on `the-pages.html` will become a link.
 - Photographer credits in the image captions, if wanted.
 
 ## Before going live
