@@ -1,0 +1,1042 @@
+[
+ {
+  "id": "pacific-northwest-coast",
+  "name": "Pacific Northwest coast",
+  "countries": "Canada · United States",
+  "coords": [
+   47.6,
+   -122.9
+  ],
+  "x": 206.43,
+  "y": 119.41,
+  "hemisphere": "north",
+  "depth": "full",
+  "sow": "Sow native seed outdoors in early autumn, September to October. Some species can also be sown in early spring (February to March), but they will usually need watering through their first summer.",
+  "sow_months": [
+   9,
+   10
+  ],
+  "why": "Autumn sowing follows the natural cycle: seed ripens from spring to autumn, the winter rains water it in, and winter cold switches off the dormancy that many native seeds carry. Some species sprout in autumn; others wait until spring after a winter in the ground.",
+  "examples_label": "Plants that sources say start readily from seed",
+  "examples": [
+   {
+    "common": "Sea blush",
+    "scientific": "Plectritis congesta",
+    "note": "An annual, native from Vancouver Island to southern California; sown in autumn it germinates the same autumn."
+   },
+   {
+    "common": "Farewell-to-spring",
+    "scientific": "Clarkia amoena",
+    "note": "An annual that needs no cold treatment and germinates easily; sow where it is to grow in autumn or spring."
+   },
+   {
+    "common": "Woolly sunflower (Oregon sunshine)",
+    "scientific": "Eriophyllum lanatum",
+    "note": "A perennial of dry, open, rocky ground with high seed viability; sown in autumn it germinates the same autumn."
+   }
+  ],
+  "find": [
+   {
+    "name": "Satinflower Nurseries (Victoria area, BC)",
+    "url": "https://satinflower.ca",
+    "what": "seed, seed blends and plants native to southern Vancouver Island, with sowing guidance"
+   },
+   {
+    "name": "Northwest Meadowscapes (Port Townsend, WA)",
+    "url": "https://northwestmeadowscapes.com",
+    "what": "native wildflower and grass seed, with planting advice"
+   },
+   {
+    "name": "Washington Native Plant Society",
+    "url": "https://www.wnps.org",
+    "what": "native plant directory, gardening pages and a native plant and seed source list"
+   }
+  ],
+  "caution": "Seed that does not come up in the first year has not gone bad; some species wait for the right conditions, and bulbs such as great camas can take up to seven years to flower.",
+  "note": "",
+  "sources": [
+   {
+    "title": "Tips on Seeding for Wildflowers, Satinflower Nurseries",
+    "url": "https://satinflower.ca/blogs/nursery-news/tips-on-seeding-for-wildflowers"
+   },
+   {
+    "title": "Planting Advice, Northwest Meadowscapes",
+    "url": "https://northwestmeadowscapes.com/pages/planting-advice"
+   },
+   {
+    "title": "Annual wildflowers bring color and pollinators back every year, Oregon State University Extension Service",
+    "url": "https://extension.oregonstate.edu/news/annual-wildflowers-bring-color-pollinators-back-every-year"
+   },
+   {
+    "title": "How to Grow Plectritis, West Coast Seeds",
+    "url": "https://www.westcoastseeds.com/blogs/wcs-academy/how-to-grow-plectritis"
+   },
+   {
+    "title": "Plant Data Sheet: Clarkia amoena, University of Washington plant propagation protocols",
+    "url": "https://depts.washington.edu/propplnt/Plants/clarkia%20amoena.htm"
+   },
+   {
+    "title": "Woolly Sunflower (Eriophyllum lanatum), Garry Oak Ecosystems Recovery Team",
+    "url": "https://goert.ca/species/eriophyllum-lanatum/"
+   },
+   {
+    "title": "Grow Common Woolly Sunflowers, West Coast Seeds",
+    "url": "https://westcoastseeds.com/blogs/wcs-academy/grow-common-woolly-sunflowers"
+   },
+   {
+    "title": "Satinflower Nurseries homepage",
+    "url": "https://satinflower.ca"
+   },
+   {
+    "title": "Washington Native Plant Society homepage",
+    "url": "https://www.wnps.org"
+   }
+  ]
+ },
+ {
+  "id": "california-lowlands",
+  "name": "California lowlands",
+  "countries": "United States",
+  "coords": [
+   36.8,
+   -120.0
+  ],
+  "x": 198.36,
+  "y": 152.77,
+  "hemisphere": "north",
+  "depth": "full",
+  "sow": "Sow native wildflower seed from mid-October to November, just before or as the autumn rains begin. Sowing can continue through to January, and as late as March if you are prepared to water.",
+  "sow_months": [
+   1,
+   10,
+   11,
+   12
+  ],
+  "why": "California's native annuals begin their yearly cycle with the autumn rains: seed germinates in the cool, wet months and flowers in spring. Sowing at this time copies nature and lets the rain do most of the watering.",
+  "examples_label": "Native annuals named by sources that describe wildflower sowing as easy",
+  "examples": [
+   {
+    "common": "California poppy",
+    "scientific": "Eschscholzia californica",
+    "note": "An early-season orange wildflower that reseeds freely."
+   },
+   {
+    "common": "Tidytips",
+    "scientific": "Layia platyglossa",
+    "note": "An early-season native annual, grouped with poppies as an early bloomer."
+   },
+   {
+    "common": "Chinese houses",
+    "scientific": "Collinsia heterophylla",
+    "note": "A native annual that tolerates shade."
+   }
+  ],
+  "find": [
+   {
+    "name": "Theodore Payne Foundation (Los Angeles area)",
+    "url": "https://theodorepayne.org",
+    "what": "non-profit nursery and seed shop for California native plants and wildflowers"
+   },
+   {
+    "name": "California Native Plant Society",
+    "url": "https://www.cnps.org",
+    "what": "local chapters, gardening guidance and the Calscape native plant finder"
+   },
+   {
+    "name": "UC Davis Arboretum and Public Garden",
+    "url": "https://publicgarden.ucdavis.edu/seeds",
+    "what": "California native wildflower seed at its plant sales, with sowing advice"
+   }
+  ],
+  "caution": "If you buy a wildflower mix, check that it contains only wildflowers native to California, and check each plant’s needs for sun and shade.",
+  "note": "",
+  "sources": [
+   {
+    "title": "Growing Annual Native Wildflowers, UC Master Gardeners of Butte County",
+    "url": "https://ucanr.edu/node/162934"
+   },
+   {
+    "title": "Sowing Native Wildflower Seeds, UC Master Gardener Program of Contra Costa County",
+    "url": "https://www.ucanr.edu/node/162886"
+   },
+   {
+    "title": "Wildflowers (November 2022), UC Master Gardener Program of Sonoma County",
+    "url": "https://www.ucanr.edu/node/124901"
+   },
+   {
+    "title": "Native wildflower seeds, UC Davis Arboretum and Public Garden",
+    "url": "https://publicgarden.ucdavis.edu/seeds"
+   },
+   {
+    "title": "Theodore Payne Foundation homepage",
+    "url": "https://theodorepayne.org"
+   },
+   {
+    "title": "California Native Plant Society homepage",
+    "url": "https://www.cnps.org"
+   }
+  ]
+ },
+ {
+  "id": "sonoran-desert",
+  "name": "Sonoran Desert, southern Arizona",
+  "countries": "United States",
+  "coords": [
+   32.5,
+   -112.0
+  ],
+  "x": 214.02,
+  "y": 166.22,
+  "hemisphere": "north",
+  "depth": "full",
+  "sow": "Sow spring-flowering desert wildflowers in autumn, from October to mid-December. Summer-flowering species that follow the monsoon are sown in spring instead.",
+  "sow_months": [
+   10,
+   11,
+   12
+  ],
+  "why": "Desert wildflower seed lies dormant through the hot, dry summer and germinates with the cool-season rains of autumn and winter. Seedlings stay small through winter and flower from February to April.",
+  "examples_label": "Plants that sources say start readily from seed",
+  "examples": [
+   {
+    "common": "Mexican gold poppy",
+    "scientific": "Eschscholzia californica subsp. mexicana",
+    "note": "Blooms in spring and reseeds easily from year to year."
+   },
+   {
+    "common": "Desert marigold",
+    "scientific": "Baileya multiradiata",
+    "note": "A short-lived yellow daisy with silver leaves that keeps itself going by self-sowing."
+   },
+   {
+    "common": "Parry's penstemon",
+    "scientific": "Penstemon parryi",
+    "note": "A perennial that is easy to establish from seed and is visited by hummingbirds."
+   }
+  ],
+  "find": [
+   {
+    "name": "Arizona Native Plant Society",
+    "url": "https://aznps.com",
+    "what": "plant lists, native gardening guidance and a brochure on growing Sonoran Desert wildflowers"
+   },
+   {
+    "name": "Native Seeds/SEARCH (Tucson)",
+    "url": "https://www.nativeseeds.org",
+    "what": "non-profit seed conservation group selling desert wildflower seed"
+   },
+   {
+    "name": "Desert Botanical Garden (Phoenix)",
+    "url": "https://dbg.org",
+    "what": "desert plant collections, classes and garden and landscape guides"
+   }
+  ],
+  "caution": "Never gather seed in state or national parks, and collecting on any public land needs a permit; avoid generic 'wildflower' or 'meadow' mixes from other regions, which can contain invasive non-native species.",
+  "note": "",
+  "sources": [
+   {
+    "title": "A guide to collecting and growing Sonoran Desert Wildflowers, Tucson Chapter of the Arizona Native Plant Society",
+    "url": "https://aznps.com/wp-content/uploads/Growingwildflowers-web-1.pdf"
+   },
+   {
+    "title": "Plant of the Month: Wildflowers, Water – Use It Wisely (Donna DiFrancesco, City of Mesa)",
+    "url": "https://wateruseitwisely.com/plant-month-wildflowers/"
+   },
+   {
+    "title": "Plant of the Month: Fall Planting for Spring Blooms, Water – Use It Wisely (written by Native Seeds/SEARCH staff)",
+    "url": "https://wateruseitwisely.com/plant-of-the-month-fall-planting-for-spring-blooms/"
+   },
+   {
+    "title": "Easy-to-Grow Native Wildflowers for the Southwest, Fine Gardening (Dan Johnson, Denver Botanic Gardens)",
+    "url": "https://www.finegardening.com/article/easy-to-grow-native-wildflowers-for-the-southwest"
+   },
+   {
+    "title": "Planting Next Year's Wildflowers, University of Arizona Cooperative Extension, Yavapai County",
+    "url": "https://cales.arizona.edu/yavapai/anr/hort/byg/archive/wildflowers.html"
+   },
+   {
+    "title": "Native Gardening, Arizona Native Plant Society",
+    "url": "https://aznps.com/native-gardening/"
+   },
+   {
+    "title": "Wildflowers collection, Native Seeds/SEARCH",
+    "url": "https://www.nativeseeds.org/collections/wildflowers"
+   }
+  ]
+ },
+ {
+  "id": "tallgrass-prairie-upper-midwest",
+  "name": "Tallgrass prairie and Upper Midwest",
+  "countries": "United States",
+  "coords": [
+   43.5,
+   -93.5
+  ],
+  "x": 271.82,
+  "y": 131.97,
+  "hemisphere": "north",
+  "depth": "full",
+  "sow": "Sow in late autumn as a dormant seeding, from about mid-October or early November until the ground freezes, so the seed lies outdoors over winter. Late spring (mid-May to 1 July in Minnesota) is the second window, but many wildflower seeds then need a cold, moist pre-treatment first.",
+  "sow_months": [
+   5,
+   6,
+   10,
+   11
+  ],
+  "why": "Many prairie wildflower seeds need a period of cold, moist conditions before they will germinate, and a winter in the soil provides it naturally. A few species, such as wild bergamot, do not need the cold and can also be sown in spring.",
+  "examples_label": "Plants that sources say start readily from seed",
+  "examples": [
+   {
+    "common": "Black-eyed Susan",
+    "scientific": "Rudbeckia hirta",
+    "note": "Establishes reliably from seed and is found across Minnesota; the seed needs a cold, moist spell or an autumn sowing, and the plant is short-lived."
+   },
+   {
+    "common": "Wild bergamot",
+    "scientific": "Monarda fistulosa",
+    "note": "A widely distributed prairie plant that is easy to start from seed and does not need cold stratification."
+   },
+   {
+    "common": "Anise hyssop (blue giant hyssop)",
+    "scientific": "Agastache foeniculum",
+    "note": "Easy to grow and often flowers in its first year; the supplier lists a 30-day cold, moist treatment. A northern species, so check that it is native to your own area."
+   }
+  ],
+  "find": [
+   {
+    "name": "Minnesota DNR native plant suppliers list",
+    "url": "https://dnr.state.mn.us/gardens/nativeplants/suppliers.html",
+    "what": "regional lists of suppliers who certify Minnesota-sourced native plants and seed"
+   },
+   {
+    "name": "Prairie Moon Nursery",
+    "url": "https://www.prairiemoon.com/",
+    "what": "native seed and plants by mail order from Winona, Minnesota, with germination guidance for each species"
+   },
+   {
+    "name": "Tallgrass Prairie Center, University of Northern Iowa",
+    "url": "https://tallgrassprairiecenter.org/",
+    "what": "prairie restoration guidance, including technical guides on seeding and seed mixes"
+   }
+  ],
+  "caution": "Ask where seed was collected: the Minnesota DNR advises that seed from sources closest to your site will be better adapted to local conditions, and not every prairie species is native across the whole region.",
+  "note": "Dates come from Minnesota and Iowa sources.",
+  "sources": [
+   {
+    "title": "Establishing Prairie Grasses and Wildflowers, Minnesota Department of Natural Resources",
+    "url": "https://files.dnr.state.mn.us/assistance/backyard/privatelandhabitat/est-prairie-grasses-wildflowers.pdf"
+   },
+   {
+    "title": "Seeding (Prairie Restoration Series, Technical Guide 8), Tallgrass Prairie Center, University of Northern Iowa",
+    "url": "https://pubdev.silo.lib.ia.us/26815/1/techguide8_seeding_2015_web.pdf"
+   },
+   {
+    "title": "Upper Midwest Native Wildflower Meadows for Pollinators & Beneficial Insects: Habitat Installation Guide, Xerces Society",
+    "url": "https://www.xerces.org/sites/default/files/publications/15-042.pdf"
+   },
+   {
+    "title": "BWSR Featured Plant: Black-eyed Susan (Rudbeckia hirta), Minnesota Board of Water and Soil Resources",
+    "url": "https://www-dev.bwsr.state.mn.us/sites/default/files/2018-12/May%20Featured%20Plant%20Black%20Eyed%20Susan.pdf"
+   },
+   {
+    "title": "BWSR Featured Plant: Wild Bergamot (Monarda fistulosa), Minnesota Board of Water and Soil Resources",
+    "url": "https://www-dev.bwsr.state.mn.us/sites/default/files/2019-02/5.pdf"
+   },
+   {
+    "title": "Agastache foeniculum Anise Hyssop, Prairie Moon Nursery",
+    "url": "https://www.prairiemoon.com/agastache-foeniculum-anise-hyssop"
+   },
+   {
+    "title": "Agastache foeniculum (Blue Giant Hyssop), Minnesota Wildflowers",
+    "url": "https://www.minnesotawildflowers.info/flower/blue-giant-hyssop"
+   },
+   {
+    "title": "Native plant suppliers, landscapers, and restoration consultants for Minnesota, Minnesota Department of Natural Resources",
+    "url": "https://dnr.state.mn.us/gardens/nativeplants/suppliers.html"
+   }
+  ]
+ },
+ {
+  "id": "northeastern-north-america",
+  "name": "Northeastern North America",
+  "countries": "Canada · United States",
+  "coords": [
+   44.5,
+   -74.0
+  ],
+  "x": 320.31,
+  "y": 128.89,
+  "hemisphere": "north",
+  "depth": "full",
+  "sow": "Sow outdoors in pots from November to February and leave them out in the weather over winter. Seedlings appear in spring.",
+  "sow_months": [
+   1,
+   2,
+   11,
+   12
+  ],
+  "why": "Many native seeds need a period of cold, moist conditions to break dormancy; sowing in autumn or winter lets the weather do this naturally.",
+  "examples_label": "Plants that sources say start readily from seed",
+  "examples": [
+   {
+    "common": "New England aster",
+    "scientific": "Symphyotrichum novae-angliae",
+    "note": "Recommended by Wild Seed Project for beginner seed-sowers; it does not strictly need a cold period."
+   },
+   {
+    "common": "Wild bergamot (wild bee-balm)",
+    "scientific": "Monarda fistulosa",
+    "note": "Another beginner species that needs no cold period before it will germinate."
+   },
+   {
+    "common": "Swamp milkweed",
+    "scientific": "Asclepias incarnata",
+    "note": "A beginner species for moist ground that needs at least 30 to 60 cold, moist days, so sow it between November and February."
+   }
+  ],
+  "find": [
+   {
+    "name": "Wild Seed Project",
+    "url": "https://wildseedproject.net/",
+    "what": "native seed from a Maine non-profit (sold from mid-October) and seed-sowing guidance for the Northeastern US"
+   },
+   {
+    "name": "North American Native Plant Society",
+    "url": "https://nanps.org/",
+    "what": "Toronto-area society with a members' seed exchange, a spring plant sale and a list of native plant growers"
+   },
+   {
+    "name": "Native Plant Trust, Northeast Seed Network",
+    "url": "https://www.nativeplanttrust.org/northeast-seed-network",
+    "what": "Northeastern US programme building a supply of locally adapted native seed"
+   }
+  ],
+  "caution": "Collect little or nothing from the wild: the North American Native Plant Society accepts wild seed only when less than 10% is taken from a healthy population of a relatively common species, and Ontario Nature warns that seed mixes may contain non-native or invasive plants.",
+  "note": "Months and the example plants come from a Maine organisation; check each plant for your own province or state.",
+  "sources": [
+   {
+    "title": "How to Sow Native Seeds in Fall and Winter, Wild Seed Project",
+    "url": "https://wildseedproject.net/blog/sowing-native-seeds"
+   },
+   {
+    "title": "How to Grow Native Plants to Help Protect Pollinators, Ontario Nature",
+    "url": "https://ontarionature.org/how-to-grow-native-plants-to-help-protect-pollinators/"
+   },
+   {
+    "title": "Asters — New England aster (Symphyotrichum novae-angliae) Seeds, Wild Seed Project",
+    "url": "https://shop.wildseedproject.net/products/new-england-aster-symphyotrichum-novae-angliae-seeds"
+   },
+   {
+    "title": "Bee-balms — Wild bee-balm (Monarda fistulosa) Seeds, Wild Seed Project",
+    "url": "https://shop.wildseedproject.net/products/bee-balm-wild-bergamot-monarda-fistulosa-seeds"
+   },
+   {
+    "title": "Milkweeds — Swamp milkweed (Asclepias incarnata) Seeds, Wild Seed Project",
+    "url": "https://shop.wildseedproject.net/products/swamp-milkweed-asclepias-incarnata-seeds"
+   },
+   {
+    "title": "Beginner Friendly Species, Wild Seed Project shop",
+    "url": "https://shop.wildseedproject.net/collections/beginner-friendly-species"
+   },
+   {
+    "title": "NANPS Seed Exchange, North American Native Plant Society",
+    "url": "https://nanps.org/nanps-seed-exchange/"
+   },
+   {
+    "title": "Northeast Seed Network, Native Plant Trust",
+    "url": "https://www.nativeplanttrust.org/northeast-seed-network"
+   }
+  ]
+ },
+ {
+  "id": "britain-and-ireland",
+  "name": "Britain and Ireland",
+  "countries": "United Kingdom · Ireland",
+  "coords": [
+   54.0,
+   -4.5
+  ],
+  "x": 489.66,
+  "y": 100.22,
+  "hemisphere": "north",
+  "depth": "full",
+  "sow": "Sow in early autumn (September) or in early to mid-spring (March and April). Yellow rattle is the exception: sow it fresh in August or September, and no later than November.",
+  "sow_months": [
+   3,
+   4,
+   9
+  ],
+  "why": "Most wildflowers shed their seed in late summer and autumn, and many need a cold winter to stimulate germination in spring. On heavy soil that stays wet and cold over winter, the RHS suggests waiting until spring.",
+  "examples_label": "Plants that sources say start readily from seed",
+  "examples": [
+   {
+    "common": "Oxeye daisy",
+    "scientific": "Leucanthemum vulgare",
+    "note": "Easily grown from seed and germinates readily in both spring and autumn."
+   },
+   {
+    "common": "Common knapweed",
+    "scientific": "Centaurea nigra",
+    "note": "A native grassland perennial that grows readily from seed; also suggested by the All-Ireland Pollinator Plan for local seed collecting."
+   },
+   {
+    "common": "Bird's-foot-trefoil",
+    "scientific": "Lotus corniculatus",
+    "note": "A common legume of unproductive grassland that establishes relatively easily from seed."
+   }
+  ],
+  "find": [
+   {
+    "name": "Plantlife",
+    "url": "https://www.plantlife.org.uk/",
+    "what": "wild plant conservation charity with meadow-making and yellow rattle guidance"
+   },
+   {
+    "name": "Emorsgate Seeds",
+    "url": "https://wildseed.co.uk/",
+    "what": "long-established grower of native British wildflower seed, sold as single species and mixes"
+   },
+   {
+    "name": "All-Ireland Pollinator Plan",
+    "url": "https://pollinators.ie/",
+    "what": "guidance for Ireland on natural meadows and collecting small amounts of local native seed"
+   }
+  ],
+  "caution": "In Ireland the All-Ireland Pollinator Plan does not recommend wildflower seed mixes, which often contain non-native or imported seed, and advises reducing mowing instead; if you do sow, choose native-origin seed from a reputable supplier and ask the landowner before collecting any seed. The Plan also asks that bought seed be sown only in your own garden.",
+  "note": "",
+  "sources": [
+   {
+    "title": "Creating wildflower meadows, Royal Horticultural Society",
+    "url": "https://www.rhs.org.uk/lawns/creating-wildflower-meadows"
+   },
+   {
+    "title": "The benefits of autumn sowing, Grow Wild, Royal Botanic Gardens, Kew",
+    "url": "https://growwild.kew.org/blog/autumn-sowing-good-wildflowers"
+   },
+   {
+    "title": "How to Grow Yellow Rattle, Plantlife",
+    "url": "https://www.plantlife.org.uk/how-to-grow-yellow-rattle/"
+   },
+   {
+    "title": "Collecting native Irish wildflower seeds, All-Ireland Pollinator Plan",
+    "url": "https://pollinators.ie/collecting-native-irish-wildflower-seeds/"
+   },
+   {
+    "title": "Why we don't recommend wildflower seed mixes, All-Ireland Pollinator Plan",
+    "url": "https://pollinators.ie/wildflower-seed/"
+   },
+   {
+    "title": "How the AIPP is trying to address this issue, All-Ireland Pollinator Plan",
+    "url": "https://pollinators.ie/wildflower-seed/how-the-aipp-is-trying-to-address-this-issue/"
+   },
+   {
+    "title": "Leucanthemum vulgare, Oxeye Daisy, Emorsgate Seeds",
+    "url": "https://wildseed.co.uk/product/species/wild-flowers/leucanthemum-vulgare/"
+   },
+   {
+    "title": "Centaurea nigra, Common Knapweed, Emorsgate Seeds",
+    "url": "https://wildseed.co.uk/product/species/wild-flowers/centaurea-nigra/"
+   },
+   {
+    "title": "Lotus corniculatus, Birdsfoot Trefoil, Emorsgate Seeds",
+    "url": "https://wildseed.co.uk/product/species/wild-flowers/lotus-corniculatus/"
+   },
+   {
+    "title": "Sowing and Aftercare - Species, Emorsgate Seeds",
+    "url": "https://wildseed.co.uk/additional-information/sowing-and-aftercare-species/"
+   }
+  ]
+ },
+ {
+  "id": "central-europe",
+  "name": "Central Europe",
+  "countries": "Germany · Austria · Switzerland",
+  "coords": [
+   48.8,
+   11.0
+  ],
+  "x": 526.1,
+  "y": 115.77,
+  "hemisphere": "north",
+  "depth": "full",
+  "sow": "Sow native wildflower seed in spring, from February or March to May, or in late summer and early autumn, from August to October. Choose a spell when lasting damp weather is expected.",
+  "sow_months": [
+   2,
+   3,
+   4,
+   5,
+   8,
+   9,
+   10
+  ],
+  "why": "Wildflower and wild grass seedlings need at least three weeks of unbroken moisture to swell and germinate. Some hard-coated seeds sown in autumn will not come up until the following spring.",
+  "examples_label": "Plants a source names for a home meadow sown from seed",
+  "examples": [
+   {
+    "common": "Oxeye daisy (Wiesenmargerite)",
+    "scientific": "Leucanthemum vulgare",
+    "note": "Named by NABU as a species for a home wildflower meadow sown from seed."
+   },
+   {
+    "common": "Meadow sage (Wiesensalbei)",
+    "scientific": "Salvia pratensis",
+    "note": "Named by NABU as a species for a home wildflower meadow sown from seed."
+   },
+   {
+    "common": "Viper's bugloss (Gewöhnlicher Natternkopf)",
+    "scientific": "Echium vulgare",
+    "note": "Named by NABU as a species for a home wildflower meadow sown from seed."
+   }
+  ],
+  "find": [
+   {
+    "name": "VWW – Verband deutscher Wildsamen- und Wildpflanzenproduzenten (Germany)",
+    "url": "https://www.natur-im-vww.de",
+    "what": "certified regional wild seed and a directory of member producers"
+   },
+   {
+    "name": "REWISA Netzwerk (Austria and South Tyrol)",
+    "url": "https://www.rewisa-netzwerk.at/",
+    "what": "regional wild plants and seed with traceable origin"
+   },
+   {
+    "name": "RegioFlora (Switzerland)",
+    "url": "https://www.regioflora.ch",
+    "what": "advice and tools for using regional wild plants"
+   }
+  ],
+  "caution": "In Germany, since 2 March 2020, seed may be sown in the open countryside only within its own region of origin unless a permit is held (Section 40, Federal Nature Conservation Act). The rule applies outside settled areas.",
+  "note": "Sowing months come from German sources.",
+  "sources": [
+   {
+    "title": "Anleitung Neuanlage Wiesenmischungen (Jan 2023), Rieger-Hofmann GmbH",
+    "url": "https://www.rieger-hofmann.de/fileadmin/user_upload/Anleitung_Neuanlage_Wiesenmischungen_Jan23.pdf"
+   },
+   {
+    "title": "Wildblumenwiese oder Blumenrasen (Anleitung Garten), NABU",
+    "url": "https://nabu.de/imperia/md/content/nabude/verbraucher-tipps/240606-nabu-anleitung-garten-wildblumenwiese.pdf"
+   },
+   {
+    "title": "Gebietseigene Herkünfte, Bundesamt für Naturschutz",
+    "url": "https://www.bfn.de/gebietseigene-herkuenfte"
+   },
+   {
+    "title": "Gebietseigene Gehölze und gebietseigenes Saatgut, Bayerisches Landesamt für Umwelt",
+    "url": "https://www.lfu.bayern.de/natur/bayaz/artenschutz_pflanzen/gehoelze_saatgut/index.htm"
+   },
+   {
+    "title": "REWISA Netzwerk homepage",
+    "url": "https://www.rewisa-netzwerk.at/"
+   },
+   {
+    "title": "RegioFlora homepage",
+    "url": "https://www.regioflora.ch"
+   }
+  ]
+ },
+ {
+  "id": "cape-floristic-region",
+  "name": "Cape Floristic Region",
+  "countries": "South Africa",
+  "coords": [
+   -33.9,
+   19.1
+  ],
+  "x": 548.53,
+  "y": 373.52,
+  "hemisphere": "south",
+  "depth": "full",
+  "sow": "Sow Cape seed in autumn. Annuals are sown from early March and proteas from mid-March, as the days begin to cool.",
+  "sow_months": [
+   3,
+   4,
+   5
+  ],
+  "why": "Cape plants rest through the dry summer and begin growing again in autumn; annuals survive summer as seed and germinate with the autumn rains. Most Cape seeds also respond well to smoke treatment, even where they do not strictly need it.",
+  "examples_label": "Plants that sources say start readily from seed",
+  "examples": [
+   {
+    "common": "Rain daisy",
+    "scientific": "Dimorphotheca pluvialis",
+    "note": "An annual of Namaqualand and the Western Cape that grows easily from seed sown in autumn, usually germinating within four days."
+   },
+   {
+    "common": "Blue flax (blousporrie)",
+    "scientific": "Heliophila coronopifolia",
+    "note": "An annual found from Namaqualand to the Western Cape; the seed germinates well, usually within a week, when sown with the autumn rains."
+   },
+   {
+    "common": "True-blue daisy",
+    "scientific": "Felicia heterophylla",
+    "note": "A Cape endemic annual (Clanwilliam to Cape Town) sown in early March, germinating within about a week."
+   }
+  ],
+  "find": [
+   {
+    "name": "Silverhill Seeds (Cape Town)",
+    "url": "https://www.silverhillseeds.co.za",
+    "what": "seed of southern African plants, sent with sowing instructions"
+   },
+   {
+    "name": "Botanical Society of South Africa",
+    "url": "https://botanicalsociety.org.za",
+    "what": "regional branches, plant fairs and guidance on indigenous plants"
+   },
+   {
+    "name": "PlantZAfrica (SANBI)",
+    "url": "https://pza.sanbi.org",
+    "what": "species-by-species growing notes from the national botanical gardens"
+   }
+  ],
+  "caution": "Do not take plant material from the wild; ask a local Botanical Society branch or botanical garden instead, and expect many fynbos plants not to flower in their first season from seed.",
+  "note": "The sources name March; April and May are our reading of “autumn”.",
+  "sources": [
+   {
+    "title": "Fynbos Gardeners: Why you should get your hands dirty this autumn, Botanical Society of South Africa",
+    "url": "https://botanicalsociety.org.za/fynbos-gardeners-autumn/"
+   },
+   {
+    "title": "Dimorphotheca pluvialis, PlantZAfrica (SANBI)",
+    "url": "https://pza.sanbi.org/node/10054"
+   },
+   {
+    "title": "Heliophila coronopifolia, PlantZAfrica (SANBI)",
+    "url": "https://pza.sanbi.org/heliophila-coronopifolia"
+   },
+   {
+    "title": "Felicia heterophylla, PlantZAfrica (SANBI)",
+    "url": "https://pza.sanbi.org/node/10253"
+   },
+   {
+    "title": "Protea repens, PlantZAfrica (SANBI)",
+    "url": "https://pza.sanbi.org/protea-repens"
+   },
+   {
+    "title": "Ursinia speciosa, PlantZAfrica (SANBI)",
+    "url": "https://pza.sanbi.org/node/11088"
+   }
+  ]
+ },
+ {
+  "id": "south-eastern-australia",
+  "name": "South-eastern Australia",
+  "countries": "Australia",
+  "coords": [
+   -36.5,
+   146.0
+  ],
+  "x": 867.42,
+  "y": 381.65,
+  "hemisphere": "south",
+  "depth": "full",
+  "sow": "Sow most native seed in spring to early summer, roughly September to December.",
+  "sow_months": [
+   9,
+   10,
+   11,
+   12
+  ],
+  "why": "Seed germinates quickly once temperatures begin to warm, and seedlings sown in spring have three to four months to grow before planting out.",
+  "examples_label": "Plants that sources say start readily from seed",
+  "examples": [
+   {
+    "common": "Golden everlasting",
+    "scientific": "Xerochrysum bracteatum",
+    "note": "Found in all states and territories; ANPSA says it is easy from seed with no pretreatment."
+   },
+   {
+    "common": "Purple coral pea (native sarsaparilla)",
+    "scientific": "Hardenbergia violacea",
+    "note": "Easy from seed once the hard seed coat is broken by abrasion or boiling water."
+   },
+   {
+    "common": "Golden wattle",
+    "scientific": "Acacia pycnantha",
+    "note": "Listed for Victoria, New South Wales and South Australia; relatively easy from seed after soaking in boiling water or scarifying."
+   }
+  ],
+  "find": [
+   {
+    "name": "Australian Native Plants Society (Australia): native seed suppliers list",
+    "url": "https://anpsa.org.au/plant-guides/australian-native-seed-suppliers/",
+    "what": "national list of native seed suppliers, plus propagation guides"
+   },
+   {
+    "name": "Seeding Victoria",
+    "url": "https://www.seedingvictoria.com.au/",
+    "what": "community seed bank supplying indigenous seed for central and western Victoria"
+   },
+   {
+    "name": "Understorey Network (Tasmania)",
+    "url": "https://www.understorey-network.org.au/about-us-folder/about-us",
+    "what": "Tasmanian native plant nursery, propagation workshops and plant database"
+   }
+  ],
+  "caution": "Get the landholder's approval before collecting seed from any land that is not yours, take no more than a small share of a plant's fruit, and note that a licence is needed to collect from threatened species or ecological communities. These are New South Wales rules; check those of your own state.",
+  "note": "The timing comes from one New South Wales source, which says “spring to early summer”; the months are our reading. No sowing calendar was found for Victoria or Tasmania.",
+  "sources": [
+   {
+    "title": "Propagating Native Seedlings (Fact Sheet 7), Murrumbidgee Landcare",
+    "url": "https://murrumbidgeelandcare.org.au/wp-content/uploads/2019/01/Fact-Sheet-7-Propagating-Native-Seedlings.pdf"
+   },
+   {
+    "title": "Plant Propagation, Australian Native Plants Society (Australia)",
+    "url": "https://anpsa.org.au/plant-propagation/"
+   },
+   {
+    "title": "Xerochrysum bracteatum, Australian Native Plants Society (Australia)",
+    "url": "https://anpsa.org.au/?p=4991"
+   },
+   {
+    "title": "Hardenbergia violacea, Australian Native Plants Society (Australia)",
+    "url": "https://anpsa.org.au/plant_profiles/hardenbergia-violacea/"
+   },
+   {
+    "title": "Acacia pycnantha, Australian Native Plants Society (Australia)",
+    "url": "https://anpsa.org.au/plant_profiles/acacia-pycnantha/"
+   },
+   {
+    "title": "Australian Native Seed Suppliers, Australian Native Plants Society (Australia)",
+    "url": "https://anpsa.org.au/plant-guides/australian-native-seed-suppliers/"
+   },
+   {
+    "title": "Seeding Victoria Inc. (home page)",
+    "url": "https://www.seedingvictoria.com.au/"
+   },
+   {
+    "title": "Who we are, Understorey Network",
+    "url": "https://www.understorey-network.org.au/about-us-folder/about-us"
+   }
+  ]
+ },
+ {
+  "id": "aotearoa-new-zealand",
+  "name": "Aotearoa New Zealand",
+  "countries": "New Zealand",
+  "coords": [
+   -41.0,
+   174.0
+  ],
+  "x": 929.67,
+  "y": 395.66,
+  "hemisphere": "south",
+  "depth": "full",
+  "sow": "Sow native seed as soon as possible after collecting it, which for most species means late summer and autumn (February to May). Where young seedlings cannot be protected from frost, store the seed and sow in late winter (August) instead.",
+  "sow_months": [
+   2,
+   3,
+   4,
+   5,
+   8
+  ],
+  "why": "Most native seed ripens in late summer and autumn and is best sown fresh. Holding seed until late winter avoids frost damage to new seedlings.",
+  "examples_label": "Plants that sources say start readily from seed",
+  "examples": [
+   {
+    "common": "Mānuka",
+    "scientific": "Leptospermum scoparium",
+    "note": "Easily raised in large numbers; the fine seed can be sprinkled on top of seed-raising mix, and it should be eco-sourced carefully because it varies across the country."
+   },
+   {
+    "common": "Harakeke (flax)",
+    "scientific": "Phormium tenax",
+    "note": "Seed ripens in autumn in dry capsules on tall stalks and germinates readily."
+   },
+   {
+    "common": "Tī kōuka (cabbage tree)",
+    "scientific": "Cordyline australis",
+    "note": "Berries ripen in autumn; DOC lists it among plants that germinate rapidly and should be sown immediately."
+   }
+  ],
+  "find": [
+   {
+    "name": "Department of Conservation Te Papa Atawhai: eco-sourcing and growing seeds",
+    "url": "https://www.doc.govt.nz/nature/native-plants/native-plant-restoration/ecosourcing-collecting-and-propagating-seeds/",
+    "what": "government guidance on collecting, storing and growing local native seed"
+   },
+   {
+    "name": "New Zealand Plant Conservation Network",
+    "url": "https://www.nzpcn.org.nz/",
+    "what": "flora database with propagation and gardening information for native species"
+   },
+   {
+    "name": "Tāne's Tree Trust",
+    "url": "https://www.tanestrees.org.nz/",
+    "what": "factsheets on collecting and raising seed of native trees and shrubs"
+   }
+  ],
+  "caution": "Eco-source: collect seed from nearby natural populations rather than from plantings of unknown origin, ask the landowner or reserve manager first, and apply to DOC for a permit before collecting on public conservation land.",
+  "note": "The sources give seasons, not months; the months shown are our reading.",
+  "sources": [
+   {
+    "title": "Eco-sourcing, collecting and propagating seeds and plant material, Department of Conservation",
+    "url": "https://www.doc.govt.nz/nature/native-plants/native-plant-restoration/ecosourcing-collecting-and-propagating-seeds/"
+   },
+   {
+    "title": "Grow seeds: Native plant restoration, Department of Conservation",
+    "url": "https://www.doc.govt.nz/nature/native-plants/native-plant-restoration/ecosourcing-collecting-and-propagating-seeds/grow-seeds/"
+   },
+   {
+    "title": "Collecting and handling seed of native trees and shrubs, Tāne's Tree Trust Factsheet Series",
+    "url": "https://docs.tanestrees.org.nz/collecting-and-handling-seed-of-native-trees-and-shrubs/"
+   },
+   {
+    "title": "New Zealand Plant Conservation Network (home page)",
+    "url": "https://www.nzpcn.org.nz/"
+   },
+   {
+    "title": "Tāne's Tree Trust (home page)",
+    "url": "https://www.tanestrees.org.nz/"
+   }
+  ]
+ },
+ {
+  "id": "japan",
+  "name": "Japan",
+  "countries": "Japan",
+  "coords": [
+   36.2,
+   138.25
+  ],
+  "x": 848.32,
+  "y": 154.65,
+  "hemisphere": "north",
+  "depth": "partial",
+  "sow": "Sow seed of native meadow plants gathered in autumn and early winter during the winter itself, so that it passes the cold season outdoors. Seed sown at another time first needs a cold spell in a refrigerator at about 5 °C.",
+  "sow_months": [
+   1,
+   2,
+   12
+  ],
+  "why": "Many native grassland plants that ripen seed in autumn and winter sprout the following spring, and their seed will not germinate until it has been exposed to a period of cold.",
+  "examples_label": "Plants a source lists as raised from seed",
+  "examples": [
+   {
+    "common": "Ominaeshi (オミナエシ)",
+    "scientific": "Patrinia scabiosifolia",
+    "note": "Native from Hokkaido to Kyushu; raised from seed or by division, and the seed needs winter cold or cold storage before it will germinate."
+   },
+   {
+    "common": "Kikyō, balloon flower (キキョウ)",
+    "scientific": "Platycodon grandiflorus",
+    "note": "Native from Hokkaido to Kyushu; raised from seed, division or cuttings, and the seed needs winter cold or cold storage."
+   },
+   {
+    "common": "Gennoshōko (ゲンノショウコ)",
+    "scientific": "Geranium thunbergii",
+    "note": "Native from Hokkaido to Kyushu; raised from seed or by division, and the seed needs winter cold or cold storage."
+   }
+  ],
+  "find": [
+   {
+    "name": "National Institute for Land and Infrastructure Management (NILIM): technical note on native wild herbs",
+    "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1014pdf/ks101407.pdf",
+    "what": "government guidance on collecting, storing and sowing local native herb seed"
+   },
+   {
+    "name": "Ministry of the Environment: slope revegetation guideline for natural parks",
+    "url": "https://www.env.go.jp/content/900524575.pdf",
+    "what": "national guideline requiring, in principle, regional-provenance seed and plants"
+   }
+  ],
+  "caution": "Little native wild-herb seed is sold commercially, and the guidance is to gather seed from plants growing wild in your own area, from several individuals, so that local genetic character is kept.",
+  "note": "This entry is thinner than the others. The guidance was written for public greening projects, no source rates these plants as easy from seed, and no supplier for home gardeners was found. The months are our reading of \"winter\". The source spells two of the plant names in an older form; the current spellings are used here.",
+  "sources": [
+   {
+    "title": "第3章 在来野草の種子採取・保管, 国土技術政策総合研究所資料 第1014号, 国土交通省 国土技術政策総合研究所 (NILIM), 2018",
+    "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1014pdf/ks101407.pdf"
+   },
+   {
+    "title": "第2編 在来野草種毎の生育特性, 国土技術政策総合研究所資料 第1014号, NILIM",
+    "url": "https://www.nilim.go.jp/lab/bcg/siryou/tnn/tnn1014pdf/ks101410.pdf"
+   },
+   {
+    "title": "自然公園における法面緑化指針, 環境省自然環境局, 2015",
+    "url": "https://www.env.go.jp/content/900524575.pdf"
+   }
+  ]
+ },
+ {
+  "id": "brazilian-cerrado",
+  "name": "Brazilian Cerrado",
+  "countries": "Brazil",
+  "coords": [
+   -15.8,
+   -47.9
+  ],
+  "x": 372.7,
+  "y": 316.88,
+  "hemisphere": "south",
+  "depth": "partial",
+  "sow": "Sow native seed directly once the rainy season has settled in, in October, November or December.",
+  "sow_months": [
+   10,
+   11,
+   12
+  ],
+  "why": "Seed and young seedlings depend on steady rain: one seed-network site reported that seed sown before fifteen dry days did not germinate. In an Embrapa trial, larger-seeded species tended to establish best in the field.",
+  "examples_label": "Trees with the highest germination in one direct-seeding trial",
+  "examples": [
+   {
+    "common": "Jatobá",
+    "scientific": "Hymenaea stigonocarpa",
+    "note": "Highest germination (54%) of the trees direct-sown in an Embrapa trial in the Federal District."
+   },
+   {
+    "common": "Cagaita",
+    "scientific": "Eugenia dysenterica",
+    "note": "Germinated at 47% when direct-sown in the same Embrapa trial."
+   },
+   {
+    "common": "Tingui",
+    "scientific": "Magonia pubescens",
+    "note": "Germinated at 45% when direct-sown in the same Embrapa trial."
+   }
+  ],
+  "find": [
+   {
+    "name": "Rede de Sementes do Cerrado",
+    "url": "https://www.rsc.org.br/",
+    "what": "non-profit network promoting trade in, and quality of, native Cerrado seed and seedlings"
+   },
+   {
+    "name": "Rede de Sementes do Xingu",
+    "url": "https://ashden.org/awards/winners/rede-de-sementes-do-xingu/",
+    "what": "community seed network in Mato Grosso (profile by the Ashden Awards)"
+   },
+   {
+    "name": "WebAmbiente (Embrapa)",
+    "url": "https://www.webambiente.cnptia.embrapa.br/",
+    "what": "database of native species by biome and restoration strategies"
+   }
+  ],
+  "caution": "Before sowing, work the soil to control exotic grasses and other weeds that would hold back the native seedlings.",
+  "note": "This entry is thinner than the others. The sources describe restoration by direct seeding of trees, not home gardens, and the timing comes from Mato Grosso, at the edge of the Cerrado.",
+  "sources": [
+   {
+    "title": "Semeando a Restauração: a muvuca de experiências de coletores e restauradores, Associação Rede de Sementes do Xingu, 2023",
+    "url": "https://rem.sema.mt.gov.br/wp-content/uploads/2025/09/Cartilha_Semeando-a-Restauracao_ARSX.pdf"
+   },
+   {
+    "title": "Semeadura direta de árvores do Cerrado: testando plantas facilitadoras e adubação, Oliveira, Coutinho & Vieira, Embrapa Recursos Genéticos e Biotecnologia (X Congresso de Ecologia do Brasil, 2011)",
+    "url": "https://www.alice.cnptia.embrapa.br/alice/bitstream/doc/1176245/1/1025.pdf"
+   },
+   {
+    "title": "Calendário de Coleta: Sementes nativas do Cerrado, Chapada dos Veadeiros/GO (CEPF Cerrado / IIEB)",
+    "url": "https://cepfcerrado.iieb.org.br/wp-content/uploads/2022/03/Calendario-de-Coleta-de-Especies-Nativas-do-Cerrado.pdf"
+   },
+   {
+    "title": "Rede de Sementes do Cerrado (home page)",
+    "url": "https://www.rsc.org.br/"
+   },
+   {
+    "title": "Rede de Sementes do Xingu, Ashden Awards winner profile",
+    "url": "https://ashden.org/awards/winners/rede-de-sementes-do-xingu/"
+   },
+   {
+    "title": "WebAmbiente, Embrapa",
+    "url": "https://www.webambiente.cnptia.embrapa.br/"
+   }
+  ]
+ }
+]

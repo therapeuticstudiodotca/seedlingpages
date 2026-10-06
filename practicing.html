@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Practicing · Seedling Pages</title>
+<meta name="description" content="How to fold a page into a seedling pot, sow it, and weave the strips that stay. Nine pictures and three movements: notice, make, rest." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+<style>
+  :root{--paper:#ffffff;--ink:#5d5a5b;--ink-strong:#454344;--stone:#8f8c8c;
+    --hair:#e6e4e2;--hair-soft:#efedeb;--panel:#faf9f8;--maxw:1080px;--ease:cubic-bezier(.22,.61,.36,1);}
+  *{box-sizing:border-box;} html,body{margin:0;padding:0;}
+  body{font-family:"Asap",system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);
+    background:var(--paper);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;line-height:1.6;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
+  a{color:inherit;}
+  img{max-width:100%;}
+
+  .topbar{display:flex;align-items:baseline;justify-content:space-between;gap:16px 28px;flex-wrap:wrap;
+    padding:26px 0 18px;border-bottom:1px solid var(--hair);}
+  .mark{font-weight:600;font-size:15px;letter-spacing:.02em;color:var(--ink-strong);text-decoration:none;}
+  .navlinks{display:flex;flex-wrap:wrap;gap:8px 20px;}
+  .navlinks a{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--stone);
+    font-weight:600;text-decoration:none;transition:color .2s var(--ease);padding:6px 0;}
+  .navlinks a:hover{color:var(--ink);}
+  .navlinks a[aria-current="page"]{color:var(--ink-strong);}
+
+  .hero{padding:52px 0 26px;max-width:720px;}
+  .eyebrow{display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;font-size:11.5px;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--stone);font-weight:600;margin:0 0 18px;}
+  .status{border:1px solid var(--hair);border-radius:100px;padding:2px 9px;letter-spacing:.1em;}
+  h1{font-weight:500;font-size:clamp(32px,4.8vw,52px);line-height:1.07;letter-spacing:-.015em;
+    color:var(--ink-strong);margin:0 0 22px;text-wrap:balance;}
+  h1 em{font-style:italic;font-weight:400;color:var(--ink);}
+  .lede{font-size:17.5px;max-width:640px;margin:0;color:var(--ink);}
+
+  figure{margin:40px 0;}
+  .fig-side{display:grid;grid-template-columns:1fr 220px;gap:26px;align-items:start;}
+  .fig-side img,.fig-stack img{display:block;width:100%;height:auto;border-radius:6px;}
+  figcaption{font-size:12px;line-height:1.55;color:var(--stone);}
+  .fig-stack{display:block;margin:44px 0;max-width:390px;}
+  .fig-stack figcaption{margin-top:12px;}
+
+  .essay{max-width:760px;padding:20px 0 8px;}
+  .essay h2,.kicker{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--stone);
+    font-weight:600;margin:44px 0 18px;}
+  .essay p{font-size:16.5px;margin:0 0 20px;color:var(--ink);}
+  a.inline{color:var(--ink-strong);text-decoration:underline;text-decoration-color:var(--stone);
+    text-underline-offset:2px;transition:text-decoration-color .2s var(--ease);}
+  a.inline:hover{text-decoration-color:var(--ink);}
+
+  .dl{font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;
+    color:var(--ink-strong);border:1px solid var(--ink-strong);border-radius:100px;
+    padding:11px 18px;text-decoration:none;display:inline-block;transition:all .2s var(--ease);}
+  .dl:hover{background:var(--ink-strong);color:#fff;}
+  .dl.quiet{border-color:var(--hair);color:var(--ink);}
+  .dl.quiet:hover{background:var(--panel);color:var(--ink-strong);border-color:var(--stone);}
+
+  .notes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:8px 0 24px;}
+  .note{border:1px solid var(--hair);border-radius:14px;padding:20px 22px;font-size:15px;background:var(--paper);}
+  .note strong{color:var(--ink-strong);font-weight:600;}
+  .note p{margin:0 0 10px;} .note p:last-child{margin:0;}
+  .boundary{border:1px solid var(--hair);border-radius:14px;padding:18px 22px;font-size:14px;color:var(--ink);
+    background:var(--panel);margin:36px 0 8px;max-width:760px;}
+
+  footer.site{border-top:1px solid var(--hair);margin-top:40px;padding:26px 0 44px;
+    display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;}
+  footer.site .fnav{display:flex;gap:6px 18px;flex-wrap:wrap;}
+  footer.site a{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--stone);
+    text-decoration:none;font-weight:600;transition:color .2s var(--ease);padding:6px 0;}
+  footer.site a:hover{color:var(--ink);}
+  footer.site .copy{font-size:12px;color:var(--stone);}
+
+  @media(max-width:720px){
+    .wrap{padding:0 16px;}
+    .fig-side{grid-template-columns:1fr;}
+    .notes{grid-template-columns:1fr;}
+    .hero{padding:36px 0 20px;}
+  }
+  @media (prefers-reduced-motion:reduce){*{transition:none !important;animation:none !important;}}
+
+  .ln{fill:none;stroke:#454344;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+  .sh{stroke:#454344;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round}
+  .th{fill:none;stroke:#454344;stroke-width:1.1;stroke-linecap:round}
+  .cr{fill:none;stroke:#454344;stroke-width:1.3;stroke-dasharray:5 4;stroke-linecap:round;stroke-linejoin:round}
+  .ar{fill:none;stroke:#454344;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+
+  .moves{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:8px 0 12px;}
+  .steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:8px 0 12px;}
+  .step{border:1px solid var(--hair);border-radius:14px;padding:16px 16px 18px;}
+  .step svg{display:block;width:100%;height:auto;max-height:190px;}
+  .step p{margin:10px 0 0;font-size:15px;color:var(--ink);}
+  .num{display:inline-block;font-weight:600;color:var(--ink-strong);margin-right:9px;}
+  .arrive{border-left:2px solid var(--hair);padding:2px 0 2px 20px;margin:26px 0 8px;max-width:680px;font-style:italic;font-size:16.5px;}
+  table{border-collapse:collapse;width:100%;max-width:560px;font-size:15px;margin:6px 0 10px;}
+  th,td{text-align:left;padding:9px 14px 9px 0;border-bottom:1px solid var(--hair);}
+  th{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--stone);font-weight:600;}
+  td.r,th.r{text-align:right;padding-right:0;}
+  .tablewrap{overflow-x:auto;}
+  .row{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 0;}
+  @media(max-width:860px){.steps{grid-template-columns:repeat(2,minmax(0,1fr));}.moves{grid-template-columns:1fr;}}
+  @media(max-width:460px){.steps{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="topbar" aria-label="Seedling Pages"><a class="mark" href="index.html">Seedling&nbsp;Pages</a><div class="navlinks"><a href="seed-atlas.html">Seed Atlas</a><a href="knowing-seed.html">Knowing Seed</a><a href="practicing.html" aria-current="page">Practicing</a><a href="the-pages.html">The Pages</a></div></nav>
+    <header class="hero">
+      <p class="eyebrow"><span>Practicing</span><span class="status">Nine pictures</span></p>
+      <h1>How to fold it, <em>slowly</em></h1>
+      <p class="lede">The whole practice is three movements: notice a page, make with it, and rest with what stays. The pictures show every fold. Look at them once, and then put them away.</p>
+    </header>
+
+    <p class="kicker">Arriving</p>
+    <p class="arrive">Feel the weight of yourself in your seat. Notice what is touching what — hands on the table, feet on the floor. Take one breath that is slightly slower than usual. Ask yourself, without needing a precise answer: what am I carrying right now?</p>
+    <p style="max-width:680px;font-size:16.5px;margin:0 0 8px">This is enough. You have already begun.</p>
+
+    <p class="kicker">Three movements</p>
+    <div class="moves">
+      <div class="note"><p><strong>Notice.</strong> Choose a page and print only that one. Let your eyes travel it. Notice where the lines crowd and where they open, and where you want to go first.</p></div>
+      <div class="note"><p><strong>Make.</strong> Attend to the page in whatever way you need, and let it dry. Then tear away the strip, fold the square into its box, fill it with soil, and sow.</p></div>
+      <div class="note"><p><strong>Rest.</strong> Keep the strip somewhere you will find it. When you have a few, weave them, and sit with what they have become before you decide what you think of it.</p></div>
+    </div>
+
+    <p class="kicker">The nine pictures</p>
+    <div class="steps"><div class="step"><svg viewBox="0 0 200 170" role="img" aria-label="Step 1: Attend to the whole page. Let it dry."><rect class="sh" x="50" y="14" width="100" height="129" fill="#ffffff"/><path class="ln" d="M50 62 C 78 40, 96 70, 118 52 S 142 44, 150 58"/><path class="sh" d="M50 86 C 74 70, 98 96, 122 78 C 134 70, 144 74, 150 82 L150 108 C 132 96, 112 118, 90 106 C 74 98, 60 104, 50 112 Z" fill="#f1efed"/><path class="ln" d="M50 36 C 70 22, 92 40, 112 26 S 140 20, 150 30"/><path class="sh" d="M50 122 C 72 112, 94 132, 118 120 C 132 113, 142 118, 150 124 L150 143 L50 143 Z" fill="#dedbd8"/><path class="ln" d="M176 152 L152 122"/><path class="sh" d="M152 122 L143 108 L156 117 Z" fill="#bdb9b6"/></svg><p><span class="num">1</span>Attend to the whole page. Let it dry.</p></div><div class="step"><svg viewBox="0 0 200 170" role="img" aria-label="Step 2: Fold the top corner across until the edges meet."><path class="cr" d="M150 14 L50 14 L50 114"/><rect class="sh" x="50" y="114" width="100" height="29" fill="#dedbd8"/><path class="sh" d="M150 14 L50 114 L150 114 Z" fill="#f1efed"/><path class="ar" d="M66 30 C 96 30, 126 60, 132 92 M123 85 L132 92 L137 81"/></svg><p><span class="num">2</span>Fold the top corner across until the edges meet.</p></div><div class="step"><svg viewBox="0 0 200 170" role="img" aria-label="Step 3: Wet the crease and tear. Keep the strip."><path class="sh" d="M150 10 L50 110 L150 110 Z" fill="#f1efed"/><path class="sh" d="M50 130 q 6.25 -4 12.5 0 t 12.5 0 t 12.5 0 t 12.5 0 t 12.5 0 t 12.5 0 t 12.5 0 t 12.5 0 V159 H50 Z" fill="#dedbd8"/><path class="sh" d="M32 96 C 25 107, 24 112, 32 117 C 40 112, 39 107, 32 96 Z" fill="#ffffff"/><path class="ar" d="M170 118 V150 M163 143 L170 150 L177 143"/></svg><p><span class="num">3</span>Wet the crease and tear. Keep the strip.</p></div><div class="step"><svg viewBox="0 0 200 170" role="img" aria-label="Step 4: Open the square. Crease the other diagonal, then bring all four corners to the centre."><rect class="sh" x="40" y="22" width="120" height="120" fill="#ffffff"/><path class="th" d="M40 22 L160 142 M160 22 L40 142"/><path class="cr" d="M100 22 L160 82 L100 142 L40 82 Z"/><path class="ar" d="M52 34 L84 66 M74 66 L84 66 L84 56"/><path class="ar" d="M148 34 L116 66 M126 66 L116 66 L116 56"/><path class="ar" d="M52 130 L84 98 M74 98 L84 98 L84 108"/><path class="ar" d="M148 130 L116 98 M126 98 L116 98 L116 108"/><circle cx="100" cy="82" r="3.5" fill="#454344"/></svg><p><span class="num">4</span>Open the square. Crease the other diagonal, then bring all four corners to the centre.</p></div><div class="step"><svg viewBox="0 0 200 170" role="img" aria-label="Step 5: Fold each edge to the centre, then open it again. All four."><rect class="sh" x="50" y="32" width="100" height="100" fill="#ffffff"/><path class="th" d="M50 32 L150 132 M150 32 L50 132"/><path class="cr" d="M50 57 H150 M50 107 H150 M75 32 V132 M125 32 V132"/><path class="ar" d="M38 34 C 26 48, 26 64, 38 78 M29 73 L38 78 L40 68"/><path class="ar" d="M38 130 C 26 116, 26 100, 38 86 M29 91 L38 86 L40 96"/></svg><p><span class="num">5</span>Fold each edge to the centre, then open it again. All four.</p></div><div class="step"><svg viewBox="0 0 200 170" role="img" aria-label="Step 6: Open two opposite flaps. Stand the two long sides up."><path class="sh" d="M100 12 L135 47 L135 117 L100 152 L65 117 L65 47 Z" fill="#ffffff"/><rect x="65" y="47" width="17.5" height="70" fill="#dedbd8"/><rect x="117.5" y="47" width="17.5" height="70" fill="#dedbd8"/><path class="th" d="M65 47 L100 82 L65 117 M135 47 L100 82 L135 117"/><path class="cr" d="M82.5 29.5 V134.5 M117.5 29.5 V134.5 M65 47 H135 M65 117 H135 M65 64.5 H135 M65 99.5 H135"/><path class="ln" d="M100 12 L135 47 L135 117 L100 152 L65 117 L65 47 Z"/><path class="ar" d="M54 100 C 43 90, 43 76, 54 66 M45 71 L54 66 L56 76"/><path class="ar" d="M146 100 C 157 90, 157 76, 146 66 M155 71 L146 66 L144 76"/></svg><p><span class="num">6</span>Open two opposite flaps. Stand the two long sides up.</p></div><div class="step"><svg viewBox="0 0 200 170" role="img" aria-label="Step 7: Lift each end. The corners tuck in; fold the point down inside."><path class="sh" d="M45 90 L115 105 L155 80 L85 65 Z" fill="#ffffff"/><path class="ln" d="M85 65 V97"/><path class="sh" d="M45 125 L115 140 L115 105 L45 90 Z" fill="#f1efed"/><path class="sh" d="M115 140 L155 115 L155 80 L115 105 Z" fill="#dedbd8"/><path class="cr" d="M115 105 L120 74 L146 32 L160 52 L155 80"/><path class="ar" d="M146 24 C 122 20, 106 48, 104 80 M96 72 L104 80 L111 71"/></svg><p><span class="num">7</span>Lift each end. The corners tuck in; fold the point down inside.</p></div><div class="step"><svg viewBox="0 0 200 170" role="img" aria-label="Step 8: Fill with soil. Sow seed native to where you live."><path class="sh" d="M45 90 L115 105 L155 80 L85 65 Z" fill="#bdb9b6"/><path class="sh" d="M45 125 L115 140 L115 105 L45 90 Z" fill="#f1efed"/><path class="sh" d="M115 140 L155 115 L155 80 L115 105 Z" fill="#dedbd8"/><path class="ln" d="M100 86 C 100 74, 101 62, 100 46"/><path class="sh" d="M100 58 C 89 56, 82 47, 82 40 C 92 41, 99 48, 100 58 Z" fill="#ffffff"/><path class="sh" d="M100 50 C 111 48, 118 39, 118 32 C 108 33, 101 40, 100 50 Z" fill="#f1efed"/><circle cx="72" cy="85" r="2.2" fill="#454344"/><circle cx="126" cy="90" r="2.2" fill="#454344"/><circle cx="112" cy="78" r="2.2" fill="#454344"/></svg><p><span class="num">8</span>Fill with soil. Sow seed native to where you live.</p></div><div class="step"><svg viewBox="0 0 200 170" role="img" aria-label="Step 9: When you are ready, weave your strips, over and under."><rect class="sh" x="51" y="10" width="26" height="150" fill="#f1efed"/><rect class="sh" x="87" y="10" width="26" height="150" fill="#ffffff"/><rect class="sh" x="123" y="10" width="26" height="150" fill="#dedbd8"/><rect class="sh" x="28" y="36" width="144" height="26" fill="#dedbd8"/><rect class="sh" x="28" y="72" width="144" height="26" fill="#bdb9b6"/><rect class="sh" x="28" y="108" width="144" height="26" fill="#f1efed"/><rect x="52" y="34.5" width="24" height="29" fill="#f1efed"/><rect x="124" y="34.5" width="24" height="29" fill="#dedbd8"/><rect x="88" y="70.5" width="24" height="29" fill="#ffffff"/><rect x="52" y="106.5" width="24" height="29" fill="#f1efed"/><rect x="124" y="106.5" width="24" height="29" fill="#dedbd8"/><path class="ln" d="M51 34 V64 M77 34 V64 M123 34 V64 M149 34 V64 M87 70 V100 M113 70 V100 M51 106 V136 M77 106 V136 M123 106 V136 M149 106 V136"/></svg><p><span class="num">9</span>When you are ready, weave your strips, over and under.</p></div></div>
+    <p style="max-width:720px;font-size:14.5px;color:var(--ink);margin:14px 0 0">Raising the walls, in pictures six and seven, is the part that takes a try or two. Fold one box from a blank page first, so the page you have attended to is not the one you learn on.</p>
+    <div class="row">
+      <a class="dl" href="files/seedling-pages-workbook.pdf" download>Download the workbook</a>
+      <a class="dl quiet" href="files/seedling-page-blank-letter.pdf" download>Blank page · Letter</a>
+      <a class="dl quiet" href="files/seedling-page-blank-a4.pdf" download>Blank page · A4</a>
+    </div>
+
+    <figure class="fig-stack"><img src="images/dried-sprig.jpg" alt="Seen from above, a person's hands hold a fine dried sprig over a pale floor." loading="lazy" /><figcaption>A person in a blue sweater sits low to the ground, holding a delicate dried sprig between both hands. Its tiny blossoms blur against the pale floor beneath.</figcaption></figure>
+
+    <p class="kicker">Sowing</p>
+    <div class="notes">
+      <div class="note"><p><strong>Seed that belongs.</strong> Sow seed native to where you live, from a source near you. The <a class="inline" href="seed-atlas.html">Seed Atlas</a> gives a season and a place to ask for a first set of regions; your local native plant society will know more.</p></div>
+      <div class="note"><p><strong>Your own ground.</strong> Plant the pot in your own garden, a container, or a place you have been invited to plant. Parks and wild places are not ours to add to.</p></div>
+      <div class="note"><p><strong>What goes into the ground.</strong> A page marked in pencil, watercolour, ink or plant dye can be planted whole. If you used anything that will not break down, lift the seedling out when you plant it and keep the paper.</p></div>
+      <div class="note"><p><strong>If nothing comes up.</strong> Some seed waits a season or longer before it moves. The practice was the attending and the giving back; the seed keeps its own time.</p></div>
+    </div>
+
+    <p class="kicker">The weaving</p>
+    <div class="essay" style="padding-top:0">
+      <p>Lay some strips side by side and weave the others through them, over and under. On Letter paper, six strips, three each way, make a square about 19&nbsp;cm (7½&nbsp;inches) across. On A4, where the strip is wider, four strips, two each way, make a square about 17&nbsp;cm. Any number from two up will weave; an odd number makes a rectangle, which is fine.</p>
+      <p>For a finer weave, fold each strip in half along its length and tear it in two. Then the halves always divide evenly:</p>
+    </div>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Pages</th><th>Weave</th><th class="r">Letter paper</th><th class="r">A4 paper</th></tr></thead>
+      <tbody>
+        <tr><td>2</td><td>2 by 2</td><td class="r">6.4 cm · 2½ in</td><td class="r">8.7 cm</td></tr>
+        <tr><td>3</td><td>3 by 3</td><td class="r">9.5 cm · 3¾ in</td><td class="r">13.1 cm</td></tr>
+        <tr><td>4</td><td>4 by 4</td><td class="r">12.7 cm · 5 in</td><td class="r">17.4 cm</td></tr>
+        <tr><td>5</td><td>5 by 5</td><td class="r">15.9 cm · 6¼ in</td><td class="r">—</td></tr>
+        <tr><td>6</td><td>6 by 6</td><td class="r">19.1 cm · 7½ in</td><td class="r">—</td></tr>
+      </tbody>
+    </table></div>
+    <p style="max-width:720px;font-size:13px;color:var(--stone);margin:0">Sizes are the side of the finished square. On A4 the strip is wider, so four pages already fill its length.</p>
+
+    <p class="boundary">Seedling Pages is not a diagnostic tool, a therapeutic assessment, or a replacement for professional mental health support. It is a creative care practice — a way of tending to yourself through attention, making, and the quiet company of the natural world. If you are working with difficult emotions and would like more support, please reach out to a qualified therapist or counsellor.</p>
+    <footer class="site">
+      <span class="copy">© 2026 Therapeutic Studio</span>
+      <div class="fnav">
+        <a href="https://www.instagram.com/therapeuticstudio.ca/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.youtube.com/@therapeuticstudiodotca" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://slowleaf.ca/" target="_blank" rel="noopener">Slow Leaf</a>
+        <a href="https://www.therapeuticstudio.ca/" target="_blank" rel="noopener">therapeuticstudio.ca</a>
+      </div>
+    </footer>
+  </div>
+
+</body>
+</html>

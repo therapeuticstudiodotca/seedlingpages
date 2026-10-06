@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Knowing Seed · Seedling Pages</title>
+<meta name="description" content="Six short notes on seed, native seed, the folded box, paper that returns, colouring research and giving back, each with its sources and its limits." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+<style>
+  :root{--paper:#ffffff;--ink:#5d5a5b;--ink-strong:#454344;--stone:#8f8c8c;
+    --hair:#e6e4e2;--hair-soft:#efedeb;--panel:#faf9f8;--maxw:1080px;--ease:cubic-bezier(.22,.61,.36,1);}
+  *{box-sizing:border-box;} html,body{margin:0;padding:0;}
+  body{font-family:"Asap",system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);
+    background:var(--paper);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;line-height:1.6;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
+  a{color:inherit;}
+  img{max-width:100%;}
+
+  .topbar{display:flex;align-items:baseline;justify-content:space-between;gap:16px 28px;flex-wrap:wrap;
+    padding:26px 0 18px;border-bottom:1px solid var(--hair);}
+  .mark{font-weight:600;font-size:15px;letter-spacing:.02em;color:var(--ink-strong);text-decoration:none;}
+  .navlinks{display:flex;flex-wrap:wrap;gap:8px 20px;}
+  .navlinks a{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--stone);
+    font-weight:600;text-decoration:none;transition:color .2s var(--ease);padding:6px 0;}
+  .navlinks a:hover{color:var(--ink);}
+  .navlinks a[aria-current="page"]{color:var(--ink-strong);}
+
+  .hero{padding:52px 0 26px;max-width:720px;}
+  .eyebrow{display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;font-size:11.5px;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--stone);font-weight:600;margin:0 0 18px;}
+  .status{border:1px solid var(--hair);border-radius:100px;padding:2px 9px;letter-spacing:.1em;}
+  h1{font-weight:500;font-size:clamp(32px,4.8vw,52px);line-height:1.07;letter-spacing:-.015em;
+    color:var(--ink-strong);margin:0 0 22px;text-wrap:balance;}
+  h1 em{font-style:italic;font-weight:400;color:var(--ink);}
+  .lede{font-size:17.5px;max-width:640px;margin:0;color:var(--ink);}
+
+  figure{margin:40px 0;}
+  .fig-side{display:grid;grid-template-columns:1fr 220px;gap:26px;align-items:start;}
+  .fig-side img,.fig-stack img{display:block;width:100%;height:auto;border-radius:6px;}
+  figcaption{font-size:12px;line-height:1.55;color:var(--stone);}
+  .fig-stack{display:block;margin:44px 0;max-width:390px;}
+  .fig-stack figcaption{margin-top:12px;}
+
+  .essay{max-width:760px;padding:20px 0 8px;}
+  .essay h2,.kicker{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--stone);
+    font-weight:600;margin:44px 0 18px;}
+  .essay p{font-size:16.5px;margin:0 0 20px;color:var(--ink);}
+  a.inline{color:var(--ink-strong);text-decoration:underline;text-decoration-color:var(--stone);
+    text-underline-offset:2px;transition:text-decoration-color .2s var(--ease);}
+  a.inline:hover{text-decoration-color:var(--ink);}
+
+  .dl{font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;
+    color:var(--ink-strong);border:1px solid var(--ink-strong);border-radius:100px;
+    padding:11px 18px;text-decoration:none;display:inline-block;transition:all .2s var(--ease);}
+  .dl:hover{background:var(--ink-strong);color:#fff;}
+  .dl.quiet{border-color:var(--hair);color:var(--ink);}
+  .dl.quiet:hover{background:var(--panel);color:var(--ink-strong);border-color:var(--stone);}
+
+  .notes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:8px 0 24px;}
+  .note{border:1px solid var(--hair);border-radius:14px;padding:20px 22px;font-size:15px;background:var(--paper);}
+  .note strong{color:var(--ink-strong);font-weight:600;}
+  .note p{margin:0 0 10px;} .note p:last-child{margin:0;}
+  .boundary{border:1px solid var(--hair);border-radius:14px;padding:18px 22px;font-size:14px;color:var(--ink);
+    background:var(--panel);margin:36px 0 8px;max-width:760px;}
+
+  footer.site{border-top:1px solid var(--hair);margin-top:40px;padding:26px 0 44px;
+    display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;}
+  footer.site .fnav{display:flex;gap:6px 18px;flex-wrap:wrap;}
+  footer.site a{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--stone);
+    text-decoration:none;font-weight:600;transition:color .2s var(--ease);padding:6px 0;}
+  footer.site a:hover{color:var(--ink);}
+  footer.site .copy{font-size:12px;color:var(--stone);}
+
+  @media(max-width:720px){
+    .wrap{padding:0 16px;}
+    .fig-side{grid-template-columns:1fr;}
+    .notes{grid-template-columns:1fr;}
+    .hero{padding:36px 0 20px;}
+  }
+  @media (prefers-reduced-motion:reduce){*{transition:none !important;animation:none !important;}}
+
+  .k{max-width:760px;padding:8px 0 0;}
+  .k h2{font-weight:500;font-size:26px;line-height:1.15;letter-spacing:-.01em;color:var(--ink-strong);margin:0 0 14px;}
+  .k section{border-top:1px solid var(--hair);padding:34px 0 26px;scroll-margin-top:20px;}
+  .k section:first-child{border-top:none;}
+  .k p{font-size:16.5px;margin:0 0 16px;}
+  .k .label{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--stone);font-weight:600;margin:0 0 12px;}
+  .limits{background:var(--panel);border:1px solid var(--hair);border-radius:12px;padding:14px 18px;font-size:14.5px !important;}
+  .limits strong{color:var(--ink-strong);font-weight:600;}
+  .sources{list-style:none;margin:14px 0 0;padding:0;}
+  .sources li{font-size:13px;color:var(--ink);padding:0 0 0 16px;position:relative;margin:0 0 7px;line-height:1.5;overflow-wrap:anywhere;}
+  .sources li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;border:1px solid var(--stone);}
+  .toc{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 10px;}
+  .toc a{font-size:12.5px;border:1px solid var(--hair);border-radius:100px;padding:7px 14px;text-decoration:none;color:var(--ink);}
+  .toc a:hover{border-color:var(--stone);color:var(--ink-strong);}
+  blockquote{margin:0 0 16px;padding:0 0 0 18px;border-left:2px solid var(--hair);font-size:16px;}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="topbar" aria-label="Seedling Pages"><a class="mark" href="index.html">Seedling&nbsp;Pages</a><div class="navlinks"><a href="seed-atlas.html">Seed Atlas</a><a href="knowing-seed.html" aria-current="page">Knowing Seed</a><a href="practicing.html">Practicing</a><a href="the-pages.html">The Pages</a></div></nav>
+    <header class="hero">
+      <p class="eyebrow"><span>Knowing Seed</span><span class="status">Notes and sources</span></p>
+      <h1>What is known, <em>and where the knowing stops</em></h1>
+      <p class="lede">Six short notes on the things this practice is made of: the seed, the seed that belongs, the fold, paper that returns, colouring, and giving back. Each says where it comes from and what it does not claim.</p>
+      <nav class="toc" aria-label="Notes on this page" style="margin-top:22px">
+        <a href="#seed">The seed</a><a href="#belongs">Seed that belongs</a><a href="#fold">The fold</a>
+        <a href="#paper">Paper that returns</a><a href="#colouring">Colouring</a><a href="#giving-back">Giving back</a><a href="#gratitude">Gratitude</a>
+      </nav>
+    </header>
+
+    <div class="k">
+      <section id="seed">
+        <p class="label">One</p>
+        <h2>The seed</h2>
+        <p>A seed is a plant embryo packaged with stored food inside a protective coat. The coat keeps water from entering before the proper time, which holds the seed in a kind of waiting.</p>
+        <p>Germination begins when the seed takes in water, which restarts what was paused inside it. The first part to emerge is the radicle, which becomes the first root. The leaves come after.</p>
+        <p class="limits"><strong>Where this stops.</strong> These are general facts about seeds. Each species has its own needs — some want cold, some want rain, some wait for years — and the note on this site reads those facts as company for a feeling, which is a way of attending, not a finding.</p>
+        <ul class="sources"><li><a class="inline" href="https://cales.arizona.edu/yavapai/anr/hort/byg/archive/howseedswork.html" target="_blank" rel="noopener">How Seeds Work, Jeff Schalau, University of Arizona Cooperative Extension, Yavapai County (2007)</a></li></ul>
+      </section>
+
+      <figure class="fig-stack"><img src="images/ice-flowers.jpg" alt="Pale flowers on thorny stems frozen inside clear ice." loading="lazy" /><figcaption>Cream-coloured flowers and their thorny green stems hang suspended in ice. Cracks and bubbles catch the light around them, and nothing has moved since the water set.</figcaption></figure>
+
+      <section id="belongs">
+        <p class="label">Two</p>
+        <h2>Seed that belongs</h2>
+        <p>The practice asks for seed native to where you live, from a source near you. Conservation bodies give the reason plainly. Minnesota's Department of Natural Resources advises that seed from sources closest to a site will be more adapted to its conditions. New Zealand's Department of Conservation calls the practice eco-sourcing: collecting from nearby natural populations.</p>
+        <p>In Ireland, the All-Ireland Pollinator Plan goes further and does not recommend wildflower seed mixes at all, because they often contain non-native or imported seed.</p>
+        <p class="limits"><strong>Where this stops.</strong> “Native” is local. A plant that belongs in one valley may not belong in the next country. The <a class="inline" href="seed-atlas.html">Seed Atlas</a> offers a first set of regions with sources; it is a place to start asking, not a planting list.</p>
+        <ul class="sources"><li><a class="inline" href="https://files.dnr.state.mn.us/assistance/backyard/privatelandhabitat/est-prairie-grasses-wildflowers.pdf" target="_blank" rel="noopener">Establishing Prairie Grasses and Wildflowers, Minnesota Department of Natural Resources</a></li><li><a class="inline" href="https://www.doc.govt.nz/nature/native-plants/native-plant-restoration/ecosourcing-collecting-and-propagating-seeds/" target="_blank" rel="noopener">Eco-sourcing, collecting and propagating seeds and plant material, Department of Conservation Te Papa Atawhai</a></li><li><a class="inline" href="https://pollinators.ie/wildflower-seed/" target="_blank" rel="noopener">Why we don't recommend wildflower seed mixes, All-Ireland Pollinator Plan</a></li></ul>
+      </section>
+
+      <section id="fold">
+        <p class="label">Three</p>
+        <h2>The fold</h2>
+        <p>The pot is a paper box made by folding the four corners of a square to its centre and raising the sides. Paperfolders often call it the masu, after the square wooden box once used in Japan to measure rice.</p>
+        <p>The paperfolding historian David Mitchell traces its first known appearance in Japan to a book by Isao Honda published in 1931, and notes a “closed box” in a German book of 1869 that is most probably the same fold. It has been made in more than one place for a long time, and no one person can be named as its maker.</p>
+        <p class="limits"><strong>Where this stops.</strong> This site does not call the fold ancient, and does not claim it for one tradition. It uses a Japanese name for it because that is the name most folders know.</p>
+        <ul class="sources"><li><a class="inline" href="https://www.origamiheaven.com/historyoftheblintzbox.htm" target="_blank" rel="noopener">History of the Blintz Box, David Mitchell, The Public Paperfolding History Project</a></li><li><a class="inline" href="https://en.wikipedia.org/wiki/Masu_(measurement)" target="_blank" rel="noopener">Masu (measurement), Wikipedia</a></li></ul>
+      </section>
+
+      <section id="paper">
+        <p class="label">Four</p>
+        <h2>Paper that returns</h2>
+        <p>On 4 May 2016, Greenery Day in Japan, the Mainichi newspaper printed a Green Newspaper, made with the agency Dentsu, on paper embedded with seeds and printed with plant-based ink, so that the day's news could be planted.</p>
+        <p>Seedling Pages borrows that idea and changes it. The seed is not in the paper. You print on ordinary paper, and you choose a seed that belongs where you live.</p>
+        <p class="limits"><strong>Where this stops.</strong> How quickly a printed page softens and breaks down depends on the paper, the soil and the weather. This site makes no promise about it.</p>
+        <ul class="sources"><li><a class="inline" href="https://oneearth.org/the-newspaper-that-gives-back-to-the-earth-literally" target="_blank" rel="noopener">The newspaper that gives back to the Earth — literally, One Earth</a></li></ul>
+      </section>
+
+      <section id="colouring">
+        <p class="label">Five</p>
+        <h2>Colouring, and what research shows</h2>
+        <p>Colouring books are older than they seem. The Little Folks' Painting Book, illustrated by Kate Greenaway and published by McLoughlin Brothers around 1879, is often named as the first. Colouring books for adults had a satirical moment in the early 1960s, and returned in the 2010s as something sold for calm.</p>
+        <p>There is a small body of research. In 2005 Nancy Curry and Tim Kasser asked whether colouring a mandala could reduce anxiety. A replication in 2012 by Renée van der Vennet and Susan Serice reported that colouring a mandala reduced anxiety more than colouring a plaid design or colouring on blank paper.</p>
+        <p>The American Art Therapy Association has said where the line sits:</p>
+        <blockquote>“The American Art Therapy Association supports the use of coloring books for pleasure and self-care; however, these uses should not be confused with the delivery of professional art therapy services, during which a client engages with a credentialed art therapist.”</blockquote>
+        <p class="limits"><strong>Where this stops.</strong> Those studies measured anxiety over a short sitting. They say nothing about grief, trauma, or lasting change, and this site claims none of those. Seedling Pages is an expressive art activity offered peer to peer. It is not art therapy.</p>
+        <ul class="sources"><li><a class="inline" href="https://www.openculture.com/2025/06/the-very-first-coloring-book-the-little-folks-painting-book.html" target="_blank" rel="noopener">The Very First Coloring Book, The Little Folks' Painting Book (circa 1879), Open Culture</a></li><li><a class="inline" href="https://wnycstudios.org/story/subversive-history-adult-coloring-books" target="_blank" rel="noopener">The Subversive History of Adult Coloring Books, WNYC Studios</a></li><li><a class="inline" href="https://doi.org/10.1080/07421656.2005.10129441" target="_blank" rel="noopener">Curry, N. A., & Kasser, T. (2005). Can Coloring Mandalas Reduce Anxiety? Art Therapy, 22(2), 81–85</a></li><li><a class="inline" href="https://doi.org/10.1080/07421656.2012.680047" target="_blank" rel="noopener">van der Vennet, R., & Serice, S. (2012). Can Coloring Mandalas Reduce Anxiety? A Replication Study. Art Therapy</a></li><li><a class="inline" href="https://associationsnow.com/2016/05/art-therapy-group-coloring-books-great" target="_blank" rel="noopener">Art Therapy Group: Coloring Books Are Great, But …, Associations Now (2016), reporting the Association's statement</a></li></ul>
+      </section>
+
+      <section id="giving-back">
+        <p class="label">Six</p>
+        <h2>Making, and giving back</h2>
+        <p>The shape of this practice — make something with care, return most of it, keep a little — is much older than this site. One place it is kept is the sand mandala of Tibetan Buddhism, built grain by grain and then swept away.</p>
+        <p>In January 2002, monks of Drepung Loseling Monastery made a healing mandala at the Smithsonian in Washington. At the closing ceremony they gave some of the sand to visitors and poured the rest into the Potomac River. The museum's account says that destroying a mandala “symbolizes the impermanence of existence.”</p>
+        <p class="limits"><strong>Where this stops.</strong> That practice is sacred, and it belongs to those who keep it. It is named here as an elder, not as a source or a method. The pages on this site are not mandalas and are not called mandalas.</p>
+        <ul class="sources"><li><a class="inline" href="https://asia-archive.si.edu/tibetan-healing-mandala/" target="_blank" rel="noopener">Tibetan Healing Mandala, Smithsonian National Museum of Asian Art</a></li></ul>
+      </section>
+
+      <section id="gratitude">
+        <p class="label">Gratitude</p>
+        <h2>Whose work is present here</h2>
+        <p>These pages grow out of <a class="inline" href="https://www.therapeuticstudio.ca/other-bodies">Other Bodies</a> and Make Space, and out of years of photographing the plants I live alongside.</p>
+        <p>They also sit within a lineage of the healing mark, and three teachers are present in them. Shauna Kaendo and the ohHEY Creative Care Community taught me the principle this work is built on: that making marks together — in community, with breath and rhythm and no image to complete — is itself a form of care, and that we heal alongside one another rather than alone. Behind that practice stand two teachers I have never met. Florence Cane, nearly a century ago, showed that a freeing line begins not in the hand but in the breath and the whole moving body, and understood the scribble as a path to the unconscious. Resmaa Menakem, whose somatic work attends to what the body carries — including what it has inherited — meets that material in the body itself, and pairs each practice with the written mark he calls “soul scribing.” I claim no mastery of what any of them teach; these pages simply learn from all three, with gratitude.</p>
+        <figure class="fig-stack" style="max-width:520px"><img src="images/linked-arms.jpg" alt="Two people in white shirts stand side by side with their arms linked, in black and white." loading="lazy" /><figcaption>Two people in loose white shirts stand close, seen from shoulder to hip. One rests a hand across their own body while their arm threads through the other's, and a third hand reaches in to hold theirs. Long dark hair falls over one shoulder.</figcaption></figure>
+        <p class="boundary" style="margin-top:8px">Seedling Pages is not a diagnostic tool, a therapeutic assessment, or a replacement for professional mental health support. It is a creative care practice — a way of tending to yourself through attention, making, and the quiet company of the natural world. If you are working with difficult emotions and would like more support, please reach out to a qualified therapist or counsellor.</p>
+      </section>
+    </div>
+
+    <footer class="site">
+      <span class="copy">© 2026 Therapeutic Studio</span>
+      <div class="fnav">
+        <a href="https://www.instagram.com/therapeuticstudio.ca/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.youtube.com/@therapeuticstudiodotca" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://slowleaf.ca/" target="_blank" rel="noopener">Slow Leaf</a>
+        <a href="https://www.therapeuticstudio.ca/" target="_blank" rel="noopener">therapeuticstudio.ca</a>
+      </div>
+    </footer>
+  </div>
+
+</body>
+</html>

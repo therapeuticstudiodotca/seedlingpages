@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Seedling Pages · Therapeutic Studio</title>
+<meta name="description" content="Eighteen pages to attend to, fold into a seedling pot, and give back to the ground. A creative care practice from Therapeutic Studio, where the seed is the other body." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+<style>
+  :root{--paper:#ffffff;--ink:#5d5a5b;--ink-strong:#454344;--stone:#8f8c8c;
+    --hair:#e6e4e2;--hair-soft:#efedeb;--panel:#faf9f8;--maxw:1080px;--ease:cubic-bezier(.22,.61,.36,1);}
+  *{box-sizing:border-box;} html,body{margin:0;padding:0;}
+  body{font-family:"Asap",system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);
+    background:var(--paper);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;line-height:1.6;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
+  a{color:inherit;}
+  img{max-width:100%;}
+
+  .topbar{display:flex;align-items:baseline;justify-content:space-between;gap:16px 28px;flex-wrap:wrap;
+    padding:26px 0 18px;border-bottom:1px solid var(--hair);}
+  .mark{font-weight:600;font-size:15px;letter-spacing:.02em;color:var(--ink-strong);text-decoration:none;}
+  .navlinks{display:flex;flex-wrap:wrap;gap:8px 20px;}
+  .navlinks a{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--stone);
+    font-weight:600;text-decoration:none;transition:color .2s var(--ease);padding:6px 0;}
+  .navlinks a:hover{color:var(--ink);}
+  .navlinks a[aria-current="page"]{color:var(--ink-strong);}
+
+  .hero{padding:52px 0 26px;max-width:720px;}
+  .eyebrow{display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;font-size:11.5px;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--stone);font-weight:600;margin:0 0 18px;}
+  .status{border:1px solid var(--hair);border-radius:100px;padding:2px 9px;letter-spacing:.1em;}
+  h1{font-weight:500;font-size:clamp(32px,4.8vw,52px);line-height:1.07;letter-spacing:-.015em;
+    color:var(--ink-strong);margin:0 0 22px;text-wrap:balance;}
+  h1 em{font-style:italic;font-weight:400;color:var(--ink);}
+  .lede{font-size:17.5px;max-width:640px;margin:0;color:var(--ink);}
+
+  figure{margin:40px 0;}
+  .fig-side{display:grid;grid-template-columns:1fr 220px;gap:26px;align-items:start;}
+  .fig-side img,.fig-stack img{display:block;width:100%;height:auto;border-radius:6px;}
+  figcaption{font-size:12px;line-height:1.55;color:var(--stone);}
+  .fig-stack{display:block;margin:44px 0;max-width:390px;}
+  .fig-stack figcaption{margin-top:12px;}
+
+  .essay{max-width:760px;padding:20px 0 8px;}
+  .essay h2,.kicker{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--stone);
+    font-weight:600;margin:44px 0 18px;}
+  .essay p{font-size:16.5px;margin:0 0 20px;color:var(--ink);}
+  a.inline{color:var(--ink-strong);text-decoration:underline;text-decoration-color:var(--stone);
+    text-underline-offset:2px;transition:text-decoration-color .2s var(--ease);}
+  a.inline:hover{text-decoration-color:var(--ink);}
+
+  .dl{font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;
+    color:var(--ink-strong);border:1px solid var(--ink-strong);border-radius:100px;
+    padding:11px 18px;text-decoration:none;display:inline-block;transition:all .2s var(--ease);}
+  .dl:hover{background:var(--ink-strong);color:#fff;}
+  .dl.quiet{border-color:var(--hair);color:var(--ink);}
+  .dl.quiet:hover{background:var(--panel);color:var(--ink-strong);border-color:var(--stone);}
+
+  .notes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:8px 0 24px;}
+  .note{border:1px solid var(--hair);border-radius:14px;padding:20px 22px;font-size:15px;background:var(--paper);}
+  .note strong{color:var(--ink-strong);font-weight:600;}
+  .note p{margin:0 0 10px;} .note p:last-child{margin:0;}
+  .boundary{border:1px solid var(--hair);border-radius:14px;padding:18px 22px;font-size:14px;color:var(--ink);
+    background:var(--panel);margin:36px 0 8px;max-width:760px;}
+
+  footer.site{border-top:1px solid var(--hair);margin-top:40px;padding:26px 0 44px;
+    display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;}
+  footer.site .fnav{display:flex;gap:6px 18px;flex-wrap:wrap;}
+  footer.site a{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--stone);
+    text-decoration:none;font-weight:600;transition:color .2s var(--ease);padding:6px 0;}
+  footer.site a:hover{color:var(--ink);}
+  footer.site .copy{font-size:12px;color:var(--stone);}
+
+  @media(max-width:720px){
+    .wrap{padding:0 16px;}
+    .fig-side{grid-template-columns:1fr;}
+    .notes{grid-template-columns:1fr;}
+    .hero{padding:36px 0 20px;}
+  }
+  @media (prefers-reduced-motion:reduce){*{transition:none !important;animation:none !important;}}
+
+  .cards-section{margin:56px 0 20px;}
+  .cards-head{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--stone);font-weight:600;margin:0 0 22px;}
+  .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
+  .card{position:relative;display:flex;flex-direction:column;justify-content:flex-end;aspect-ratio:3/4;border-radius:6px;
+    overflow:hidden;text-decoration:none;color:#fff;background:var(--ink-strong);}
+  .card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s var(--ease);}
+  .card::after{content:"";position:absolute;inset:0;
+    background:linear-gradient(to top,rgba(30,28,28,.86) 0%,rgba(30,28,28,.42) 50%,rgba(30,28,28,.14) 100%);}
+  .card:hover img{transform:scale(1.04);}
+  .card .c-inner{position:relative;z-index:1;padding:20px 18px 22px;}
+  .card h3{font-size:19px;font-weight:500;letter-spacing:-.01em;margin:0 0 8px;}
+  .card p{font-size:12.5px;line-height:1.5;margin:0 0 14px;color:rgba(255,255,255,.9);}
+  .card .more{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:#fff;
+    border:1px solid rgba(255,255,255,.55);border-radius:100px;padding:6px 13px;display:inline-block;transition:all .2s var(--ease);}
+  .card:hover .more{background:#fff;color:var(--ink-strong);border-color:#fff;}
+  .workbook{margin:64px 0 8px;padding:40px 0 8px;border-top:1px solid var(--hair);
+    display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;}
+  .workbook img{display:block;width:100%;height:auto;border-radius:6px;}
+  .workbook p{font-size:15.5px;color:var(--ink);margin:0 0 20px;}
+  .workbook .row{display:flex;flex-wrap:wrap;gap:10px;}
+  .workbook .cap{font-size:12px;color:var(--stone);margin:16px 0 0;}
+  @media(max-width:860px){.cards{grid-template-columns:1fr 1fr;}}
+  @media(max-width:720px){.workbook{grid-template-columns:1fr;gap:24px;}}
+  @media(max-width:460px){.cards{grid-template-columns:1fr;} .card{aspect-ratio:4/3;}}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="topbar" aria-label="Seedling Pages"><a class="mark" href="index.html">Seedling&nbsp;Pages</a><div class="navlinks"><a href="seed-atlas.html">Seed Atlas</a><a href="knowing-seed.html">Knowing Seed</a><a href="practicing.html">Practicing</a><a href="the-pages.html">The Pages</a></div></nav>
+
+    <header class="hero">
+      <p class="eyebrow"><span>Therapeutic Studio</span><span class="status">A paper practice</span></p>
+      <h1>Seedling Pages</h1>
+      <p class="lede">Eighteen pages to attend to, fold, and give back to the ground. Therapeutic Studio works with the natural world as company for what we feel — not as a symbol for it, but as a body that has been through something like it, for far longer than we have. A seed has been through a great deal of waiting. It knows something about holding a whole life closed and still until the time is right. Here, we make something beside it, and then let the making go where the seed goes.</p>
+    </header>
+
+    <figure class="fig-side"><img src="images/hands-leaves.jpg" alt="Several hands reach into dark green leaves and faded orange blooms." loading="lazy" /><figcaption>Hands from more than one person reach into a shrub of glossy dark leaves, touching a leaf here and a spent orange bloom there. The flowers are dry and curled at the end of their season.</figcaption></figure>
+
+    <section class="essay">
+      <h2>Why the seed</h2>
+      <p><a class="inline" href="https://www.therapeuticstudio.ca/other-bodies">Other bodies</a> of the natural world are not metaphors for what we feel. They are sites of wisdom. Each has been doing something structurally like a human emotion for far longer than there have been humans to feel it — and sitting with what it actually does can make your own version of that emotion easier to be with. Not easier to solve. Easier to keep company with.</p>
+      <p>The seed belongs in that company. It is a whole plant, very small, packed beside the food it will need and closed inside a coat. The coat keeps water out, and so the seed waits — not because nothing is alive in it, but because the time is not yet right. When water does come in, what was paused begins to work again, and the first thing to leave the seed is not a leaf. It is the root. Before anything shows above the soil, the seed has already gone down into the dark and taken hold there. <a class="inline" href="knowing-seed.html#seed">Where this comes from.</a></p>
+      <p>So a sitting with these pages becomes a place to let something wait without calling it stuck. You attend to a page, and then you fold it, fill it, and sow it. Nothing is kept whole, judged, or performed. The page goes into the ground — and whatever came up in you while you made it is allowed to go on changing, out of sight, before there is anything to show for it.</p>
+      <p>This is an invitation, peer to peer. I am learning as I go, a student among older practices — a paper box that people in Japan and in Europe have folded for generations, and ways of making with care and then giving back that others have kept far longer than I have known of them — naming where they come from and staying a learner rather than claiming mastery. You don't need to know how to draw. You need a page, a little soil, <em>a seed that belongs where you live,</em> and a willingness to notice what arrives.</p>
+    </section>
+
+    <figure class="fig-stack"><img src="images/offering-dish.jpg" alt="A person holds out a small dark dish of dried leaves while another hand steadies it." loading="lazy" /><figcaption>A person in a tan linen shirt offers a small dark dish piled with dried, sage-like leaves. A second hand reaches in from the side to support it, so the dish rests between them.</figcaption></figure>
+
+    <section class="essay">
+      <h2>A note on the medium</h2>
+      <p>The making here is done on ordinary paper — the kind that comes out of a home printer, nothing more. Not because it is cheap, but because of what paper is. It was a plant once. It takes a mark, holds a crease, tears along a wet line, and softens when it is damp. It can be finished and still be given away. That last part is the point.</p>
+      <p>Each page began as a photograph of a plant I have lived beside. I drew each one, and then drew the drawing, moving closer each time, until what was left was a small part of a body seen from very near. They have no names here. We are too close to them for names. So this isn't colouring in. There is no picture to complete, and nothing to get right. Attend to a page with whatever you have — pencil, watercolour, ink, nothing but your eyes — in whatever way this moment needs.</p>
+      <p>And then most of it goes back. The page folds into a small pot, and the pot goes into the soil with a seed in it. One strip of each page stays with you. When you have a few, you weave them. That is the whole of what you keep: not the picture, but a trace that you were there.</p>
+    </section>
+
+    <section class="cards-section">
+      <p class="cards-head">Four ways in</p>
+      <div class="cards">
+        <a class="card" href="the-pages.html"><img src="images/dried-leaf.jpg" alt="" loading="lazy" /><div class="c-inner"><h3>The Pages</h3><p>Eighteen companions, drawn very close. Print one at a time, attend to it however this moment needs, and let it go.</p><span class="more">See more</span></div></a>
+        <a class="card" href="practicing.html"><img src="images/dried-sprig.jpg" alt="" loading="lazy" /><div class="c-inner"><h3>Practicing</h3><p>How to fold it, slowly. Nine pictures: tear the strip, fold the box, sow the seed, and weave what stays.</p><span class="more">See more</span></div></a>
+        <a class="card" href="knowing-seed.html"><img src="images/dish-window-light.jpg" alt="" loading="lazy" /><div class="c-inner"><h3>Knowing Seed</h3><p>What does a seed do while it waits? Notes on seed, paper, the fold and the research — each with its sources, and its limits.</p><span class="more">See more</span></div></a>
+        <a class="card" href="seed-atlas.html"><img src="images/moss-bark.jpg" alt="" loading="lazy" /><div class="c-inner"><h3>Seed Atlas</h3><p>When to sow, and where to find seed that belongs. A map of regions, each with its own season and its own keepers.</p><span class="more">See more</span></div></a>
+      </div>
+    </section>
+
+    <section class="workbook">
+      <div><img src="images/pine-needles.jpg" alt="A person in a white shirt holds a few pine needles in an open palm, in black and white." loading="lazy" /></div>
+      <div>
+        <p><a class="inline" href="files/seedling-pages-workbook.pdf" download>A printable workbook</a> — the opening pages, the practice in nine pictures, and a blank page marked with fold lines, so you can try the box before you fold a page you have attended to. The eighteen drawings are being made now and will be added as they are finished. Nothing to complete. Print the page you need, and begin.</p>
+        <div class="row">
+          <a class="dl" href="files/seedling-pages-workbook.pdf" download>Download the workbook</a>
+          <a class="dl quiet" href="the-pages.html">See the pages</a>
+        </div>
+        <p class="cap">A person sits on the grass with pine needles gathered in one open hand. Their other hand passes through the foreground, blurred, as if it has just let something go.</p>
+      </div>
+    </section>
+
+    <p class="boundary">Seedling Pages is not a diagnostic tool, a therapeutic assessment, or a replacement for professional mental health support. It is a creative care practice — a way of tending to yourself through attention, making, and the quiet company of the natural world. If you are working with difficult emotions and would like more support, please reach out to a qualified therapist or counsellor.</p>
+
+    <footer class="site">
+      <span class="copy">© 2026 Therapeutic Studio</span>
+      <div class="fnav">
+        <a href="https://www.instagram.com/therapeuticstudio.ca/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.youtube.com/@therapeuticstudiodotca" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://slowleaf.ca/" target="_blank" rel="noopener">Slow Leaf</a>
+        <a href="https://www.therapeuticstudio.ca/" target="_blank" rel="noopener">therapeuticstudio.ca</a>
+      </div>
+    </footer>
+  </div>
+
+</body>
+</html>

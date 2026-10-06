@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The Pages · Seedling Pages</title>
+<meta name="description" content="Eighteen line drawings made very close to a plant, to attend to, fold and sow. The drawings are being made and will appear as each is finished." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+<style>
+  :root{--paper:#ffffff;--ink:#5d5a5b;--ink-strong:#454344;--stone:#8f8c8c;
+    --hair:#e6e4e2;--hair-soft:#efedeb;--panel:#faf9f8;--maxw:1080px;--ease:cubic-bezier(.22,.61,.36,1);}
+  *{box-sizing:border-box;} html,body{margin:0;padding:0;}
+  body{font-family:"Asap",system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);
+    background:var(--paper);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;line-height:1.6;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
+  a{color:inherit;}
+  img{max-width:100%;}
+
+  .topbar{display:flex;align-items:baseline;justify-content:space-between;gap:16px 28px;flex-wrap:wrap;
+    padding:26px 0 18px;border-bottom:1px solid var(--hair);}
+  .mark{font-weight:600;font-size:15px;letter-spacing:.02em;color:var(--ink-strong);text-decoration:none;}
+  .navlinks{display:flex;flex-wrap:wrap;gap:8px 20px;}
+  .navlinks a{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--stone);
+    font-weight:600;text-decoration:none;transition:color .2s var(--ease);padding:6px 0;}
+  .navlinks a:hover{color:var(--ink);}
+  .navlinks a[aria-current="page"]{color:var(--ink-strong);}
+
+  .hero{padding:52px 0 26px;max-width:720px;}
+  .eyebrow{display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;font-size:11.5px;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--stone);font-weight:600;margin:0 0 18px;}
+  .status{border:1px solid var(--hair);border-radius:100px;padding:2px 9px;letter-spacing:.1em;}
+  h1{font-weight:500;font-size:clamp(32px,4.8vw,52px);line-height:1.07;letter-spacing:-.015em;
+    color:var(--ink-strong);margin:0 0 22px;text-wrap:balance;}
+  h1 em{font-style:italic;font-weight:400;color:var(--ink);}
+  .lede{font-size:17.5px;max-width:640px;margin:0;color:var(--ink);}
+
+  figure{margin:40px 0;}
+  .fig-side{display:grid;grid-template-columns:1fr 220px;gap:26px;align-items:start;}
+  .fig-side img,.fig-stack img{display:block;width:100%;height:auto;border-radius:6px;}
+  figcaption{font-size:12px;line-height:1.55;color:var(--stone);}
+  .fig-stack{display:block;margin:44px 0;max-width:390px;}
+  .fig-stack figcaption{margin-top:12px;}
+
+  .essay{max-width:760px;padding:20px 0 8px;}
+  .essay h2,.kicker{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--stone);
+    font-weight:600;margin:44px 0 18px;}
+  .essay p{font-size:16.5px;margin:0 0 20px;color:var(--ink);}
+  a.inline{color:var(--ink-strong);text-decoration:underline;text-decoration-color:var(--stone);
+    text-underline-offset:2px;transition:text-decoration-color .2s var(--ease);}
+  a.inline:hover{text-decoration-color:var(--ink);}
+
+  .dl{font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;
+    color:var(--ink-strong);border:1px solid var(--ink-strong);border-radius:100px;
+    padding:11px 18px;text-decoration:none;display:inline-block;transition:all .2s var(--ease);}
+  .dl:hover{background:var(--ink-strong);color:#fff;}
+  .dl.quiet{border-color:var(--hair);color:var(--ink);}
+  .dl.quiet:hover{background:var(--panel);color:var(--ink-strong);border-color:var(--stone);}
+
+  .notes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:8px 0 24px;}
+  .note{border:1px solid var(--hair);border-radius:14px;padding:20px 22px;font-size:15px;background:var(--paper);}
+  .note strong{color:var(--ink-strong);font-weight:600;}
+  .note p{margin:0 0 10px;} .note p:last-child{margin:0;}
+  .boundary{border:1px solid var(--hair);border-radius:14px;padding:18px 22px;font-size:14px;color:var(--ink);
+    background:var(--panel);margin:36px 0 8px;max-width:760px;}
+
+  footer.site{border-top:1px solid var(--hair);margin-top:40px;padding:26px 0 44px;
+    display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;}
+  footer.site .fnav{display:flex;gap:6px 18px;flex-wrap:wrap;}
+  footer.site a{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--stone);
+    text-decoration:none;font-weight:600;transition:color .2s var(--ease);padding:6px 0;}
+  footer.site a:hover{color:var(--ink);}
+  footer.site .copy{font-size:12px;color:var(--stone);}
+
+  @media(max-width:720px){
+    .wrap{padding:0 16px;}
+    .fig-side{grid-template-columns:1fr;}
+    .notes{grid-template-columns:1fr;}
+    .hero{padding:36px 0 20px;}
+  }
+  @media (prefers-reduced-motion:reduce){*{transition:none !important;animation:none !important;}}
+
+  .grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:14px;margin:18px 0 12px;}
+  .tile{aspect-ratio:8.5/11;border:1px dashed var(--hair);border-radius:6px;background:var(--panel);
+    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:var(--stone);text-decoration:none;}
+  .tile .n{font-size:22px;font-weight:500;color:var(--ink);letter-spacing:-.01em;}
+  .tile .s{font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;}
+  a.tile{border-style:solid;background:var(--paper);transition:border-color .2s var(--ease);overflow:hidden;position:relative;}
+  a.tile:hover{border-color:var(--stone);}
+  a.tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+  a.tile .n,a.tile .s{position:relative;background:rgba(255,255,255,.86);padding:0 6px;border-radius:4px;}
+  .sub{font-size:13px;color:var(--stone);margin:0 0 6px;}
+  .row{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 0;}
+  @media(max-width:860px){.grid{grid-template-columns:repeat(3,minmax(0,1fr));}}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="topbar" aria-label="Seedling Pages"><a class="mark" href="index.html">Seedling&nbsp;Pages</a><div class="navlinks"><a href="seed-atlas.html">Seed Atlas</a><a href="knowing-seed.html">Knowing Seed</a><a href="practicing.html">Practicing</a><a href="the-pages.html" aria-current="page">The Pages</a></div></nav>
+    <header class="hero">
+      <p class="eyebrow"><span>The Pages</span><span class="status">Being drawn</span></p>
+      <h1>Eighteen companions, <em>very close</em></h1>
+      <p class="lede">Each page is a line drawing made close to a plant — close enough that it stops being a picture of anything and becomes a surface to stay with. Choose one. Print only that one. Look before you touch it.</p>
+    </header>
+
+    <section aria-label="The eighteen pages">
+      <p class="sub">The drawings are being made by hand and will appear here as each is finished. Until then, the blank page below carries the same fold lines.</p>
+      <div class="grid"><div class="tile"><span class="n">01</span><span class="s">Being drawn</span></div><div class="tile"><span class="n">02</span><span class="s">Being drawn</span></div><div class="tile"><span class="n">03</span><span class="s">Being drawn</span></div><div class="tile"><span class="n">04</span><span class="s">Being drawn</span></div><div class="tile"><span class="n">05</span><span class="s">Being drawn</span></div><div class="tile"><span class="n">06</span><span class="s">Being drawn</span></div><div class="tile"><span class="n">07</span><span class="s">Being drawn</span></div><div class="tile"><span class="n">08</span><span class="s">Being drawn</span></div><div class="tile"><span class="n">09</span><span class="s">Being drawn</span></div><div class="tile"><span class="n">10</span><span class="s">Being drawn</span></div><div class="tile"><span class="n">11</span><span class="s">Being drawn</span></div><div class="tile"><span class="n">12</span><span class="s">Being drawn</span></div><div class="tile"><span class="n">13</span><span class="s">Being drawn</span></div><div class="tile"><span class="n">14</span><span class="s">Being drawn</span></div><div class="tile"><span class="n">15</span><span class="s">Being drawn</span></div><div class="tile"><span class="n">16</span><span class="s">Being drawn</span></div><div class="tile"><span class="n">17</span><span class="s">Being drawn</span></div><div class="tile"><span class="n">18</span><span class="s">Being drawn</span></div></div>
+      <div class="row">
+        <a class="dl" href="files/seedling-page-blank-letter.pdf" download>Blank page · Letter</a>
+        <a class="dl quiet" href="files/seedling-page-blank-a4.pdf" download>Blank page · A4</a>
+      </div>
+    </section>
+
+    <figure class="fig-stack"><img src="images/dried-leaf.jpg" alt="A hand holds up a single dried, curled leaf by its stem." loading="lazy" /><figcaption>A person in a blue sweater holds a small dried leaf toward the camera between finger and thumb. The leaf is pale and curled and in sharp focus; they are a soft blur behind it.</figcaption></figure>
+
+    <p class="kicker">How the pages are held</p>
+    <div class="notes">
+      <div class="note"><p><strong>They have no names.</strong> You will not be told which plant this is, or which part, or what it means. You know it the way you know anything held close: by looking, and by staying.</p></div>
+      <div class="note"><p><strong>There is nothing to complete.</strong> Fill one small shape and stop. Follow a single line from edge to edge. Flood it. Cross the lines. Leave most of it alone. Use one page or all eighteen.</p></div>
+      <div class="note"><p><strong>The lines on the page.</strong> Faint lines mark where the box will fold, and a dotted line marks where the strip tears away. They sit under whatever you add, and you can ignore them until you fold.</p></div>
+      <div class="note"><p><strong>Whatever you have.</strong> Pencil, coloured pencil, watercolour, ink and plant dyes can go into the ground with the pot. If you use acrylic, permanent marker, wax crayon or anything plastic, lift the seedling out when you plant it and keep the paper.</p></div>
+      <div class="note"><p><strong>Nothing is asked for.</strong> These pages never ask you to remember or explain anything. Whatever arrives is welcome, and nothing has to arrive.</p></div>
+      <div class="note"><p><strong>Printing.</strong> Plain, uncoated paper, printed at full size (100%, not “fit to page”). Light washes sit best on ordinary paper. Let the page dry fully before you fold it.</p></div>
+    </div>
+
+    <footer class="site">
+      <span class="copy">© 2026 Therapeutic Studio</span>
+      <div class="fnav">
+        <a href="https://www.instagram.com/therapeuticstudio.ca/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.youtube.com/@therapeuticstudiodotca" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://slowleaf.ca/" target="_blank" rel="noopener">Slow Leaf</a>
+        <a href="https://www.therapeuticstudio.ca/" target="_blank" rel="noopener">therapeuticstudio.ca</a>
+      </div>
+    </footer>
+  </div>
+
+</body>
+</html>
