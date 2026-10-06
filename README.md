@@ -10,7 +10,7 @@ The site for seedlingpages.ca, a creative care practice from Therapeutic Studio.
 - `knowing-seed.html` — six notes with sources, and Gratitude
 - `seed-atlas.html` — the map; its region data is embedded in the page
 - `regions.json` — the same region data as a separate file, for reference
-- `images/` — photographs (licensed by Therapeutic Studio)
+- `images/` — photographs (licensed by Therapeutic Studio), each used once across the site, and the workbook cover
 - `files/` — the workbook PDF and the blank fold-line pages (Letter and A4)
 - `CNAME` — tells GitHub Pages the site lives at seedlingpages.ca
 
