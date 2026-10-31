@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The Root Goes First · Seedling Pages</title>
+<meta name="description" content="An essay on germination, dormancy, and what happens underground before anything shows. Seedling Pages, a paper practice from Therapeutic Studio, where the seed is the other body." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+<style>
+:root{--paper:#ffffff;--ink:#5d5a5b;--ink-strong:#454344;--stone:#a29f9f;
+  --hair:#e6e4e2;--hair-soft:#efedeb;--panel:#faf9f8;--maxw:1080px;--ease:cubic-bezier(.22,.61,.36,1);}
+*{box-sizing:border-box;} html,body{margin:0;padding:0;}
+body{font-family:"Asap",system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);
+  background:var(--paper);-webkit-font-smoothing:antialiased;line-height:1.6;}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
+a{color:inherit;}
+.topbar{display:flex;align-items:baseline;justify-content:space-between;gap:16px 28px;flex-wrap:wrap;
+  padding:26px 0 18px;border-bottom:1px solid var(--hair);}
+.mark{font-weight:600;font-size:15px;letter-spacing:.02em;color:var(--ink-strong);text-decoration:none;}
+.navlinks{display:flex;flex-wrap:wrap;gap:12px 20px;}
+.navlinks a{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--stone);
+  font-weight:600;text-decoration:none;transition:color .2s var(--ease);}
+.navlinks a:hover{color:var(--ink);}
+.navlinks a[aria-current="page"]{color:var(--ink-strong);}
+.hero{padding:52px 0 26px;max-width:720px;}
+.eyebrow{display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;font-size:11.5px;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--stone);font-weight:600;margin:0 0 18px;}
+.status{border:1px solid var(--hair);border-radius:100px;padding:2px 9px;letter-spacing:.1em;}
+h1{font-weight:500;font-size:clamp(32px,4.8vw,52px);line-height:1.07;letter-spacing:-.015em;
+  color:var(--ink-strong);margin:0 0 22px;}
+h1 em{font-style:italic;font-weight:400;color:var(--ink);}
+.lede{font-size:17.5px;max-width:640px;margin:0;color:var(--ink);}
+figure{margin:40px 0;}
+.fig-side{display:grid;grid-template-columns:minmax(0,520px) 220px;gap:26px;align-items:start;}
+.fig-side img{display:block;width:100%;height:auto;border-radius:6px;}
+figcaption{font-size:12px;line-height:1.55;color:var(--stone);}
+.fig-stack{display:block;margin:44px 0;max-width:390px;}
+.fig-stack.wide{max-width:520px;}
+.fig-stack img{display:block;width:100%;height:auto;border-radius:6px;}
+.fig-stack figcaption{margin-top:12px;max-width:660px;}
+.fig-pair{display:grid;grid-template-columns:1fr 1fr;gap:22px;max-width:760px;margin:44px 0;}
+.fig-pair figure{margin:0;} .fig-pair img{display:block;width:100%;height:auto;border-radius:6px;}
+.fig-pair figcaption{margin-top:12px;}
+.essay{max-width:760px;padding:20px 0 8px;}
+.essay h2,.kicker{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--stone);
+  font-weight:600;margin:44px 0 18px;}
+.essay p{font-size:16.5px;margin:0 0 20px;color:var(--ink);}
+a.inline{color:var(--ink-strong);text-decoration:underline;text-decoration-color:var(--stone);
+  text-underline-offset:2px;transition:text-decoration-color .2s var(--ease);}
+a.inline:hover{text-decoration-color:var(--ink);}
+.essay em{font-style:italic;}
+.cards-section{margin:56px 0 20px;}
+.cards-head{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--stone);
+  font-weight:600;margin:0 0 22px;}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
+.card{position:relative;display:flex;flex-direction:column;justify-content:flex-end;
+  aspect-ratio:3/4;border-radius:6px;overflow:hidden;text-decoration:none;color:#fff;background:var(--ink-strong);}
+.card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s var(--ease);}
+.card::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(30,28,28,.82) 0%,rgba(30,28,28,.34) 46%,rgba(30,28,28,.12) 100%);}
+.card:hover img{transform:scale(1.04);}
+.card .c-inner{position:relative;z-index:1;padding:20px 18px 22px;}
+.card h3{font-size:19px;font-weight:500;letter-spacing:-.01em;margin:0 0 8px;}
+.card p{font-size:12.5px;line-height:1.5;margin:0 0 14px;color:rgba(255,255,255,.86);}
+.card .more{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:#fff;
+  border:1px solid rgba(255,255,255,.55);border-radius:100px;padding:6px 13px;display:inline-block;transition:all .2s var(--ease);}
+.card:hover .more{background:#fff;color:var(--ink-strong);border-color:#fff;}
+.journal{margin:64px 0 40px;padding:40px 0 8px;border-top:1px solid var(--hair);
+  display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;}
+.journal p{font-size:15.5px;color:var(--ink);margin:0 0 20px;}
+.dl{font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--ink-strong);
+  border:1px solid var(--ink-strong);border-radius:100px;padding:9px 18px;text-decoration:none;
+  display:inline-block;transition:all .2s var(--ease);}
+.dl:hover{background:var(--ink-strong);color:#fff;}
+.row{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 0;}
+.scope{margin:40px 0 0;padding:20px 22px;background:var(--panel);border-radius:6px;max-width:760px;}
+.scope p{font-size:14.5px;margin:0 0 10px;} .scope p:last-child{margin:0;}
+.scope strong{color:var(--ink-strong);font-weight:600;}
+.sources{max-width:760px;margin:44px 0 0;}
+.sources ol{margin:0;padding-left:20px;}
+.sources li{font-size:13px;color:var(--ink);margin:0 0 8px;overflow-wrap:anywhere;}
+.grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;margin:30px 0 16px;max-width:900px;}
+a.tile{position:relative;overflow:hidden;aspect-ratio:8.5/11;border:1px solid var(--hair);border-radius:6px;
+  background:var(--paper);display:flex;flex-direction:column;justify-content:flex-end;align-items:center;
+  padding:10px;text-decoration:none;transition:border-color .2s var(--ease);}
+a.tile:hover{border-color:var(--stone);}
+a.tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+a.tile .n{position:relative;font-size:13px;font-weight:600;letter-spacing:.08em;color:var(--ink-strong);
+  background:rgba(255,255,255,.9);padding:0 7px;border-radius:4px;}
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin:30px 0 12px;}
+.steps.one{grid-template-columns:minmax(0,420px);}
+.step{border:1px solid var(--hair);border-radius:6px;padding:16px 16px 18px;}
+.step svg{display:block;width:100%;height:auto;max-height:190px;}
+.step p{margin:10px 0 0;font-size:14.5px;color:var(--ink);}
+.num{display:inline-block;font-weight:600;color:var(--ink-strong);margin-right:9px;}
+.ln{fill:none;stroke:#454344;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.sh{stroke:#454344;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round}
+.cr{fill:none;stroke:#454344;stroke-width:1.3;stroke-dasharray:5 4;stroke-linecap:round;stroke-linejoin:round}
+.ar{fill:none;stroke:#454344;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+footer{border-top:1px solid var(--hair);margin-top:48px;padding:26px 0 44px;
+  display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;}
+footer .fnav{display:flex;gap:18px;flex-wrap:wrap;}
+footer a{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--stone);
+  text-decoration:none;font-weight:600;transition:color .2s var(--ease);}
+footer a:hover{color:var(--ink);}
+footer .copy{font-size:12px;color:var(--stone);}
+@media(max-width:860px){.steps{grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media(max-width:720px){
+  .fig-side{grid-template-columns:1fr;}
+  .cards{grid-template-columns:1fr 1fr;}
+  .journal{grid-template-columns:1fr;gap:24px;}
+  .grid{grid-template-columns:repeat(3,minmax(0,1fr));}
+  .fig-pair{grid-template-columns:1fr;}
+}
+@media(max-width:620px){.hero{padding:34px 0 18px;} .wrap{padding:0 18px;}}
+@media(max-width:460px){.cards{grid-template-columns:1fr;} .steps{grid-template-columns:1fr;} .grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav class="topbar" aria-label="Seedling Pages">
+  <a class="mark" href="index.html">Seedling&nbsp;Pages</a>
+  <div class="navlinks"><a href="the-pages.html">The Pages</a><a href="folding-and-sowing.html">Folding &amp; Sowing</a><a href="weaving.html">Weaving</a><a href="the-root-goes-first.html" aria-current="page">The Root Goes First</a></div>
+</nav>
+
+<header class="hero">
+  <p class="eyebrow">An essay</p>
+  <h1>The root goes <em>first</em></h1>
+</header>
+
+<article class="essay">
+      <p>Put a seed in your palm and it will not help you. It has no warmth of its own, and so little weight that you look down to check it is still there. You could carry it in a coat pocket through a whole winter and take it out in March looking exactly as it did in November, and nothing about it would tell you whether you had been carrying a life or a small brown stone.</p>
+      <p>It is a life. Inside the coat there is a plant, already made, lying beside the food that will see it through its first days. The coat is closed over them both. For as long as it stays closed, the seed does what looks from where we stand like nothing at all.</p>
+<figure class="fig-stack"><img src="images/ice-thistle.jpg" alt="A thistle frozen in clear ice, seen from above, its spiked leaves spreading out from the centre." loading="lazy" /><figcaption>A thistle, seen from above, is held inside a block of clear ice. Its narrow spiked leaves spread out from the centre in every direction, green fading to straw at the tips, and the ice around them is clouded with bubbles and pale fractures. <!-- CREDIT: add "Photography by …" here once the photographer is confirmed. --></figcaption></figure>
+
+      <p>Botanists use the word germination more narrowly than the rest of us do. For them it starts when water gets in, and it is over when the first root pushes through the coat. The stem, the leaves, the pale hook that lifts a crumb of soil on its back: these come afterward and go by other names. Germination itself takes place wholly out of sight. It produces a root, and the root goes down.</p>
+      <p>I have not been able to put this away since I learned it. The first act of a seed is to go further into the dark it was already in. It makes no move toward the light until it has taken hold. And for a good while after it has begun, the ground above it looks the way it looked the week before.</p>
+      <p>Some seeds will not do even that. Water, warmth, a mild spring, every condition a seed is said to need, and they stay shut. This is called dormancy, and it does not mean the seed is dead or spoiled. A dormant seed is a living one that something in its own body is holding back. Many are waiting for a winter to pass over them first.</p>
+      <p>A date seed was dug from the ruins of Masada, on its rock above the Dead Sea, and radiocarbon dating placed it in the first century. It was planted. It came up. The researchers followed the seedling for twenty-six months and reported that it grew as date seedlings ordinarily grow. On any day in the nearly two thousand years before that, it would have looked like it was over.</p>
+      <figure class="fig-stack"><img src="images/ice-flowers.jpg" alt="Pale flowers on thorny stems frozen inside clear ice." loading="lazy" /><figcaption>Cream-coloured flowers and their thorny green stems hang suspended in ice. Cracks and bubbles catch the light around them, and nothing has moved since the water set. <!-- CREDIT: add "Photography by …" here once the photographer is confirmed. --></figcaption></figure>
+      <p>People go quiet like that too. For months at a time we show no movement, and when someone asks how we are we say fine, because there is no event to report. The seed proves nothing about us. It has made me slower to say what I am looking at.</p>
+      <p>Seedling Pages is ten sheets of paper with lines on them and no words. Each one started as a plant I live beside. I photographed it, and then followed only the spaces between its leaves, nearer and nearer again, until I was too close to say what I was looking at. What is left has no name, and I have not given it one.</p>
+      <figure class="fig-stack"><img src="images/hands-table.jpg" alt="A pair of hands rests loosely clasped on a pale wooden table." loading="lazy" /><figcaption>Seen from over the shoulder, a person's hands rest together on a pale wooden table, fingers loosely curled. Their sleeves are rolled back and the light is soft and warm. <!-- CREDIT: add "Photography by …" here once the photographer is confirmed. --></figcaption></figure>
+      <p>Print a single page and put it on the table. Look at it before you pick up a pencil. The lines run thick in one corner and leave a clearing in another, and your eye will already have gone somewhere without asking you. Start there. A pencil drawn along one line makes a small dry sound. Watercolour on ordinary paper follows the damp and stops at an edge you did not choose. For some minutes you are a person filling in a page. Then, on a good day, the table goes, and the question of whether you are doing it well goes with it, and there is only the line and the place the line is heading. You will not notice this while it is happening. You notice afterward, the way you find out it has stopped raining some time after it did.</p>
+      <p>It does not always come. When it doesn’t, stop, and leave the rest of the page bare. A page with one corner coloured is finished.</p>
+      <p>When the paper is dry, fold one corner across to make a square, run a wet brush along the crease, and tear. The strip comes away with a soft, furred edge. Keep it. What remains folds, corners to the centre, into a box about the size of a cupped hand. Fill it with soil. Ask someone nearby who knows plants what belongs in the ground where you live, and press one of those seeds in.</p>
+      <p>Then the box goes into the earth: the lines, the colour, the hour you spent. You cover it over and stand up, and there is nothing to look at. You cannot check on what you made. I can’t promise you a seedling, either. Some seeds wait a year. Some never come up.</p>
+      <figure class="fig-stack wide"><img src="images/pine-needles.jpg" alt="A person in a white shirt holds a few pine needles in an open palm, in black and white." loading="lazy" /><figcaption>A person sits on the grass with pine needles gathered in one open hand. Their other hand passes through the foreground, blurred, as if it has just let something go. <!-- CREDIT: add "Photography by …" here once the photographer is confirmed. --></figcaption></figure>
+      <p>What you have is the strip. After a few pages you have a few, and they weave, over and under, into a small square of colour with no picture in it.</p>
+      <p>And under the place where you knelt, with no sign of it at the surface, a root may have started down.</p>
+    </article>
+
+<div class="row"><a class="dl" href="the-pages.html">See the ten pages</a></div>
+
+<section class="scope">
+  <p><strong>What this practice is not.</strong> Seedling Pages is a creative health practice, not therapy. It is not a diagnostic tool, an assessment, or a replacement for professional mental health support. If you are working with difficult feelings and would like more support, please reach out to a qualified therapist or counsellor.</p>
+  <p>If you are in distress, please reach someone who can help now: in British Columbia, 310-6789 (no area code); anywhere in Canada, call or text 9-8-8.</p>
+</section>
+
+<section class="sources">
+  <p class="kicker">Sources</p>
+  <ol><li>Bewley, J. D. (1997). Seed germination and dormancy. <em>The Plant Cell</em>, 9(7), 1055–1066. <a class="inline" href="https://doi.org/10.1105/tpc.9.7.1055" target="_blank" rel="noopener">doi.org/10.1105/tpc.9.7.1055</a></li><li>Sallon, S., Solowey, E., Cohen, Y., Korchinsky, R., Egli, M., Woodhatch, I., Simchoni, O., &amp; Kislev, M. (2008). Germination, genetics, and growth of an ancient date seed. <em>Science</em>, 320(5882), 1464. <a class="inline" href="https://doi.org/10.1126/science.1153600" target="_blank" rel="noopener">doi.org/10.1126/science.1153600</a></li></ol>
+</section>
+
+<footer>
+  <span class="copy">&copy; 2026 Therapeutic Studio</span>
+  <div class="fnav">
+    <a href="gratitude.html">Gratitude</a>
+    <a href="https://www.instagram.com/therapeuticstudio.ca/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.youtube.com/@therapeuticstudiodotca" target="_blank" rel="noopener">YouTube</a>
+    <a href="https://slowleaf.ca/" target="_blank" rel="noopener">Slow Leaf</a>
+    <a href="https://otherbodies.ca/" target="_blank" rel="noopener">Other Bodies</a>
+    <a href="https://www.therapeuticstudio.ca/" target="_blank" rel="noopener">therapeuticstudio.ca</a>
+  </div>
+</footer>
+</div>
+</body>
+</html>

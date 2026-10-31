@@ -4,109 +4,156 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Gratitude · Seedling Pages</title>
-<meta name="description" content="The teachers and earlier work present in Seedling Pages." />
+<meta name="description" content="Whose work is present in Seedling Pages. Seedling Pages, a paper practice from Therapeutic Studio, where the seed is the other body." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
 <style>
-  :root{--paper:#ffffff;--ink:#5d5a5b;--ink-strong:#454344;--stone:#8f8c8c;
-    --hair:#e6e4e2;--hair-soft:#efedeb;--panel:#faf9f8;--maxw:1080px;--ease:cubic-bezier(.22,.61,.36,1);}
-  *{box-sizing:border-box;} html,body{margin:0;padding:0;}
-  body{font-family:"Asap",system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);
-    background:var(--paper);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;line-height:1.6;}
-  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
-  a{color:inherit;}
-  img{max-width:100%;}
-
-  .topbar{display:flex;align-items:baseline;justify-content:space-between;gap:16px 28px;flex-wrap:wrap;
-    padding:26px 0 18px;border-bottom:1px solid var(--hair);}
-  .mark{font-weight:600;font-size:15px;letter-spacing:.02em;color:var(--ink-strong);text-decoration:none;}
-  .navlinks{display:flex;flex-wrap:wrap;gap:8px 20px;}
-  .navlinks a{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--stone);
-    font-weight:600;text-decoration:none;transition:color .2s var(--ease);padding:6px 0;}
-  .navlinks a:hover{color:var(--ink);}
-  .navlinks a[aria-current="page"]{color:var(--ink-strong);}
-
-  .hero{padding:52px 0 26px;max-width:720px;}
-  .eyebrow{display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;font-size:11.5px;letter-spacing:.2em;
-    text-transform:uppercase;color:var(--stone);font-weight:600;margin:0 0 18px;}
-  .status{border:1px solid var(--hair);border-radius:100px;padding:2px 9px;letter-spacing:.1em;}
-  h1{font-weight:500;font-size:clamp(32px,4.8vw,52px);line-height:1.07;letter-spacing:-.015em;
-    color:var(--ink-strong);margin:0 0 22px;text-wrap:balance;}
-  h1 em{font-style:italic;font-weight:400;color:var(--ink);}
-  .lede{font-size:17.5px;max-width:640px;margin:0;color:var(--ink);}
-
-  figure{margin:40px 0;}
-  .fig-side{display:grid;grid-template-columns:1fr 220px;gap:26px;align-items:start;}
-  .fig-side img,.fig-stack img{display:block;width:100%;height:auto;border-radius:6px;}
-  figcaption{font-size:12px;line-height:1.55;color:var(--stone);}
-  .fig-stack{display:block;margin:44px 0;max-width:390px;}
-  .fig-stack figcaption{margin-top:12px;}
-
-  .essay{max-width:760px;padding:20px 0 8px;}
-  .essay h2,.kicker{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--stone);
-    font-weight:600;margin:44px 0 18px;}
-  .essay p{font-size:16.5px;margin:0 0 20px;color:var(--ink);}
-  a.inline{color:var(--ink-strong);text-decoration:underline;text-decoration-color:var(--stone);
-    text-underline-offset:2px;transition:text-decoration-color .2s var(--ease);}
-  a.inline:hover{text-decoration-color:var(--ink);}
-
-  .dl{font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;
-    color:var(--ink-strong);border:1px solid var(--ink-strong);border-radius:100px;
-    padding:11px 18px;text-decoration:none;display:inline-block;transition:all .2s var(--ease);}
-  .dl:hover{background:var(--ink-strong);color:#fff;}
-  .dl.quiet{border-color:var(--hair);color:var(--ink);}
-  .dl.quiet:hover{background:var(--panel);color:var(--ink-strong);border-color:var(--stone);}
-
-  .notes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:8px 0 24px;}
-  .note{border:1px solid var(--hair);border-radius:14px;padding:20px 22px;font-size:15px;background:var(--paper);}
-  .note strong{color:var(--ink-strong);font-weight:600;}
-  .note p{margin:0 0 10px;} .note p:last-child{margin:0;}
-  .boundary{border:1px solid var(--hair);border-radius:14px;padding:18px 22px;font-size:14px;color:var(--ink);
-    background:var(--panel);margin:36px 0 8px;max-width:760px;}
-
-  footer.site{border-top:1px solid var(--hair);margin-top:40px;padding:26px 0 44px;
-    display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;}
-  footer.site .fnav{display:flex;gap:6px 18px;flex-wrap:wrap;}
-  footer.site a{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--stone);
-    text-decoration:none;font-weight:600;transition:color .2s var(--ease);padding:6px 0;}
-  footer.site a:hover{color:var(--ink);}
-  footer.site .copy{font-size:12px;color:var(--stone);}
-
-  @media(max-width:720px){
-    .wrap{padding:0 16px;}
-    .fig-side{grid-template-columns:1fr;}
-    .notes{grid-template-columns:1fr;}
-    .hero{padding:36px 0 20px;}
-  }
-  @media (prefers-reduced-motion:reduce){*{transition:none !important;animation:none !important;}}
-
-  .essay{max-width:680px;} .essay p{font-size:17px;line-height:1.7;}
+:root{--paper:#ffffff;--ink:#5d5a5b;--ink-strong:#454344;--stone:#a29f9f;
+  --hair:#e6e4e2;--hair-soft:#efedeb;--panel:#faf9f8;--maxw:1080px;--ease:cubic-bezier(.22,.61,.36,1);}
+*{box-sizing:border-box;} html,body{margin:0;padding:0;}
+body{font-family:"Asap",system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);
+  background:var(--paper);-webkit-font-smoothing:antialiased;line-height:1.6;}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
+a{color:inherit;}
+.topbar{display:flex;align-items:baseline;justify-content:space-between;gap:16px 28px;flex-wrap:wrap;
+  padding:26px 0 18px;border-bottom:1px solid var(--hair);}
+.mark{font-weight:600;font-size:15px;letter-spacing:.02em;color:var(--ink-strong);text-decoration:none;}
+.navlinks{display:flex;flex-wrap:wrap;gap:12px 20px;}
+.navlinks a{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--stone);
+  font-weight:600;text-decoration:none;transition:color .2s var(--ease);}
+.navlinks a:hover{color:var(--ink);}
+.navlinks a[aria-current="page"]{color:var(--ink-strong);}
+.hero{padding:52px 0 26px;max-width:720px;}
+.eyebrow{display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;font-size:11.5px;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--stone);font-weight:600;margin:0 0 18px;}
+.status{border:1px solid var(--hair);border-radius:100px;padding:2px 9px;letter-spacing:.1em;}
+h1{font-weight:500;font-size:clamp(32px,4.8vw,52px);line-height:1.07;letter-spacing:-.015em;
+  color:var(--ink-strong);margin:0 0 22px;}
+h1 em{font-style:italic;font-weight:400;color:var(--ink);}
+.lede{font-size:17.5px;max-width:640px;margin:0;color:var(--ink);}
+figure{margin:40px 0;}
+.fig-side{display:grid;grid-template-columns:minmax(0,520px) 220px;gap:26px;align-items:start;}
+.fig-side img{display:block;width:100%;height:auto;border-radius:6px;}
+figcaption{font-size:12px;line-height:1.55;color:var(--stone);}
+.fig-stack{display:block;margin:44px 0;max-width:390px;}
+.fig-stack.wide{max-width:520px;}
+.fig-stack img{display:block;width:100%;height:auto;border-radius:6px;}
+.fig-stack figcaption{margin-top:12px;max-width:660px;}
+.fig-pair{display:grid;grid-template-columns:1fr 1fr;gap:22px;max-width:760px;margin:44px 0;}
+.fig-pair figure{margin:0;} .fig-pair img{display:block;width:100%;height:auto;border-radius:6px;}
+.fig-pair figcaption{margin-top:12px;}
+.essay{max-width:760px;padding:20px 0 8px;}
+.essay h2,.kicker{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--stone);
+  font-weight:600;margin:44px 0 18px;}
+.essay p{font-size:16.5px;margin:0 0 20px;color:var(--ink);}
+a.inline{color:var(--ink-strong);text-decoration:underline;text-decoration-color:var(--stone);
+  text-underline-offset:2px;transition:text-decoration-color .2s var(--ease);}
+a.inline:hover{text-decoration-color:var(--ink);}
+.essay em{font-style:italic;}
+.cards-section{margin:56px 0 20px;}
+.cards-head{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--stone);
+  font-weight:600;margin:0 0 22px;}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
+.card{position:relative;display:flex;flex-direction:column;justify-content:flex-end;
+  aspect-ratio:3/4;border-radius:6px;overflow:hidden;text-decoration:none;color:#fff;background:var(--ink-strong);}
+.card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s var(--ease);}
+.card::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(30,28,28,.82) 0%,rgba(30,28,28,.34) 46%,rgba(30,28,28,.12) 100%);}
+.card:hover img{transform:scale(1.04);}
+.card .c-inner{position:relative;z-index:1;padding:20px 18px 22px;}
+.card h3{font-size:19px;font-weight:500;letter-spacing:-.01em;margin:0 0 8px;}
+.card p{font-size:12.5px;line-height:1.5;margin:0 0 14px;color:rgba(255,255,255,.86);}
+.card .more{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:#fff;
+  border:1px solid rgba(255,255,255,.55);border-radius:100px;padding:6px 13px;display:inline-block;transition:all .2s var(--ease);}
+.card:hover .more{background:#fff;color:var(--ink-strong);border-color:#fff;}
+.journal{margin:64px 0 40px;padding:40px 0 8px;border-top:1px solid var(--hair);
+  display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;}
+.journal p{font-size:15.5px;color:var(--ink);margin:0 0 20px;}
+.dl{font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--ink-strong);
+  border:1px solid var(--ink-strong);border-radius:100px;padding:9px 18px;text-decoration:none;
+  display:inline-block;transition:all .2s var(--ease);}
+.dl:hover{background:var(--ink-strong);color:#fff;}
+.row{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 0;}
+.scope{margin:40px 0 0;padding:20px 22px;background:var(--panel);border-radius:6px;max-width:760px;}
+.scope p{font-size:14.5px;margin:0 0 10px;} .scope p:last-child{margin:0;}
+.scope strong{color:var(--ink-strong);font-weight:600;}
+.sources{max-width:760px;margin:44px 0 0;}
+.sources ol{margin:0;padding-left:20px;}
+.sources li{font-size:13px;color:var(--ink);margin:0 0 8px;overflow-wrap:anywhere;}
+.grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;margin:30px 0 16px;max-width:900px;}
+a.tile{position:relative;overflow:hidden;aspect-ratio:8.5/11;border:1px solid var(--hair);border-radius:6px;
+  background:var(--paper);display:flex;flex-direction:column;justify-content:flex-end;align-items:center;
+  padding:10px;text-decoration:none;transition:border-color .2s var(--ease);}
+a.tile:hover{border-color:var(--stone);}
+a.tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+a.tile .n{position:relative;font-size:13px;font-weight:600;letter-spacing:.08em;color:var(--ink-strong);
+  background:rgba(255,255,255,.9);padding:0 7px;border-radius:4px;}
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin:30px 0 12px;}
+.steps.one{grid-template-columns:minmax(0,420px);}
+.step{border:1px solid var(--hair);border-radius:6px;padding:16px 16px 18px;}
+.step svg{display:block;width:100%;height:auto;max-height:190px;}
+.step p{margin:10px 0 0;font-size:14.5px;color:var(--ink);}
+.num{display:inline-block;font-weight:600;color:var(--ink-strong);margin-right:9px;}
+.ln{fill:none;stroke:#454344;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.sh{stroke:#454344;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round}
+.cr{fill:none;stroke:#454344;stroke-width:1.3;stroke-dasharray:5 4;stroke-linecap:round;stroke-linejoin:round}
+.ar{fill:none;stroke:#454344;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+footer{border-top:1px solid var(--hair);margin-top:48px;padding:26px 0 44px;
+  display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;}
+footer .fnav{display:flex;gap:18px;flex-wrap:wrap;}
+footer a{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--stone);
+  text-decoration:none;font-weight:600;transition:color .2s var(--ease);}
+footer a:hover{color:var(--ink);}
+footer .copy{font-size:12px;color:var(--stone);}
+@media(max-width:860px){.steps{grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media(max-width:720px){
+  .fig-side{grid-template-columns:1fr;}
+  .cards{grid-template-columns:1fr 1fr;}
+  .journal{grid-template-columns:1fr;gap:24px;}
+  .grid{grid-template-columns:repeat(3,minmax(0,1fr));}
+  .fig-pair{grid-template-columns:1fr;}
+}
+@media(max-width:620px){.hero{padding:34px 0 18px;} .wrap{padding:0 18px;}}
+@media(max-width:460px){.cards{grid-template-columns:1fr;} .steps{grid-template-columns:1fr;} .grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;}}
 </style>
 </head>
 <body>
-  <div class="wrap">
-    <nav class="topbar" aria-label="Seedling Pages"><a class="mark" href="index.html">Seedling&nbsp;Pages</a><div class="navlinks"><a href="index.html#pages">The pages</a><a href="index.html#practice">The practice</a><a href="gratitude.html" aria-current="page">Gratitude</a></div></nav>
-    <header class="hero">
-      <p class="eyebrow"><span>Gratitude</span></p>
-      <h1>Whose work is present here</h1>
-    </header>
-    <article class="essay">
-      <p>Seedling Pages grows out of <a class="inline" href="https://www.therapeuticstudio.ca/other-bodies">Other Bodies</a> and Make Space, and out of years of photographing the plants I live alongside. The seed first appeared there in <a class="inline" href="https://therapeuticstudiodotca.github.io/other-bodies-star-chart/germination.html">Germination</a>, one of the Other Bodies stories.</p>
-      <p>These pages also sit within a lineage of the healing mark, and three teachers are present in them. Shauna Kaendo and the ohHEY Creative Care Community taught me the principle this work is built on: that making marks together — in community, with breath and rhythm and no image to complete — is itself a form of care, and that we heal alongside one another rather than alone. Behind that practice stand two teachers I have never met. Florence Cane, nearly a century ago, showed that a freeing line begins not in the hand but in the breath and the whole moving body, and understood the scribble as a path to the unconscious. Resmaa Menakem, whose somatic work attends to what the body carries — including what it has inherited — meets that material in the body itself, and pairs each practice with the written mark he calls “soul scribing.” I claim no mastery of what any of them teach; these pages simply learn from all three, with gratitude.</p>
-      <figure class="fig-stack" style="max-width:520px"><img src="images/linked-arms.jpg" alt="Two people in white shirts stand side by side with their arms linked, in black and white." loading="lazy" /><figcaption>Two people in loose white shirts stand close, seen from shoulder to hip. One rests a hand across their own body while their arm threads through the other's, and a third hand reaches in to hold theirs. Long dark hair falls over one shoulder.</figcaption></figure>
-      <p class="boundary">Seedling Pages is not a diagnostic tool, a therapeutic assessment, or a replacement for professional mental health support. It is a creative care practice — a way of tending to yourself through attention, making, and the quiet company of the natural world. If you are working with difficult emotions and would like more support, please reach out to a qualified therapist or counsellor.</p>
-    </article>
-    <footer class="site">
-      <span class="copy">© 2026 Therapeutic Studio</span>
-      <div class="fnav">
-        <a href="https://www.instagram.com/therapeuticstudio.ca/" target="_blank" rel="noopener">Instagram</a>
-        <a href="https://www.youtube.com/@therapeuticstudiodotca" target="_blank" rel="noopener">YouTube</a>
-        <a href="https://slowleaf.ca/" target="_blank" rel="noopener">Slow Leaf</a>
-        <a href="https://www.therapeuticstudio.ca/" target="_blank" rel="noopener">therapeuticstudio.ca</a>
-      </div>
-    </footer>
-  </div>
+<div class="wrap">
+<nav class="topbar" aria-label="Seedling Pages">
+  <a class="mark" href="index.html">Seedling&nbsp;Pages</a>
+  <div class="navlinks"><a href="the-pages.html">The Pages</a><a href="folding-and-sowing.html">Folding &amp; Sowing</a><a href="weaving.html">Weaving</a><a href="the-root-goes-first.html">The Root Goes First</a></div>
+</nav>
 
+<header class="hero">
+  <p class="eyebrow">Gratitude</p>
+  <h1>Whose work is <em>present here</em></h1>
+</header>
+
+<article class="essay">
+      <p>Seedling Pages grows out of <a class="inline" href="https://otherbodies.ca/" target="_blank" rel="noopener">Other Bodies</a> and Make Space, and out of years of photographing the plants I live alongside. The seed first appeared there in <a class="inline" href="https://otherbodies.ca/stories/germination.html">Germination</a>, one of the Other Bodies stories.</p>
+      <p>These pages also sit within a lineage of the healing mark, and three teachers are present in them. Shauna Kaendo and the ohHEY Creative Care Community taught me the principle this work is built on: that making marks together — in community, with breath and rhythm and no image to complete — is itself a form of care, and that we heal alongside one another rather than alone. Behind that practice stand two teachers I have never met. Florence Cane, nearly a century ago, showed that a freeing line begins not in the hand but in the breath and the whole moving body, and understood the scribble as a path to the unconscious. Resmaa Menakem, whose somatic work attends to what the body carries — including what it has inherited — meets that material in the body itself, and pairs each practice with the written mark he calls “soul scribing.” I claim no mastery of what any of them teach; these pages simply learn from all three, with gratitude.</p>
+      <figure class="fig-stack" style="max-width:520px"><img src="images/linked-arms.jpg" alt="Two people in white shirts stand side by side with their arms linked, in black and white." loading="lazy" /><figcaption>Two people in loose white shirts stand close, seen from shoulder to hip. One rests a hand across their own body while their arm threads through the other's, and a third hand reaches in to hold theirs. Long dark hair falls over one shoulder. <!-- CREDIT: add "Photography by …" here once the photographer is confirmed. --></figcaption></figure>
+      <figure class="fig-stack"><img src="images/bed-grass-flowers.jpg" alt="A white mattress and pillows lie on green grass beside a stream, with a bunch of orange flowers resting on the pillows." loading="lazy" /><figcaption>A white mattress and two pillows lie out on the grass near a narrow stream. A loose bunch of orange flowers rests across the pillows, and a few fallen petals are scattered over the sheet. No one is there yet, or no one is there any more. <!-- CREDIT: add "Photography by …" here once the photographer is confirmed. --></figcaption></figure>
+</article>
+
+<section class="scope">
+  <p><strong>What this practice is not.</strong> Seedling Pages is a creative health practice, not therapy. It is not a diagnostic tool, an assessment, or a replacement for professional mental health support. If you are working with difficult feelings and would like more support, please reach out to a qualified therapist or counsellor.</p>
+  <p>If you are in distress, please reach someone who can help now: in British Columbia, 310-6789 (no area code); anywhere in Canada, call or text 9-8-8.</p>
+</section>
+
+<footer>
+  <span class="copy">&copy; 2026 Therapeutic Studio</span>
+  <div class="fnav">
+    <a href="gratitude.html" aria-current="page">Gratitude</a>
+    <a href="https://www.instagram.com/therapeuticstudio.ca/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.youtube.com/@therapeuticstudiodotca" target="_blank" rel="noopener">YouTube</a>
+    <a href="https://slowleaf.ca/" target="_blank" rel="noopener">Slow Leaf</a>
+    <a href="https://otherbodies.ca/" target="_blank" rel="noopener">Other Bodies</a>
+    <a href="https://www.therapeuticstudio.ca/" target="_blank" rel="noopener">therapeuticstudio.ca</a>
+  </div>
+</footer>
+</div>
 </body>
 </html>

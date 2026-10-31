@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Weaving · Seedling Pages</title>
+<meta name="description" content="Weave the strips from your pages, over and under, into a small square of colour. Seedling Pages, a paper practice from Therapeutic Studio, where the seed is the other body." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+<style>
+:root{--paper:#ffffff;--ink:#5d5a5b;--ink-strong:#454344;--stone:#a29f9f;
+  --hair:#e6e4e2;--hair-soft:#efedeb;--panel:#faf9f8;--maxw:1080px;--ease:cubic-bezier(.22,.61,.36,1);}
+*{box-sizing:border-box;} html,body{margin:0;padding:0;}
+body{font-family:"Asap",system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);
+  background:var(--paper);-webkit-font-smoothing:antialiased;line-height:1.6;}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
+a{color:inherit;}
+.topbar{display:flex;align-items:baseline;justify-content:space-between;gap:16px 28px;flex-wrap:wrap;
+  padding:26px 0 18px;border-bottom:1px solid var(--hair);}
+.mark{font-weight:600;font-size:15px;letter-spacing:.02em;color:var(--ink-strong);text-decoration:none;}
+.navlinks{display:flex;flex-wrap:wrap;gap:12px 20px;}
+.navlinks a{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--stone);
+  font-weight:600;text-decoration:none;transition:color .2s var(--ease);}
+.navlinks a:hover{color:var(--ink);}
+.navlinks a[aria-current="page"]{color:var(--ink-strong);}
+.hero{padding:52px 0 26px;max-width:720px;}
+.eyebrow{display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;font-size:11.5px;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--stone);font-weight:600;margin:0 0 18px;}
+.status{border:1px solid var(--hair);border-radius:100px;padding:2px 9px;letter-spacing:.1em;}
+h1{font-weight:500;font-size:clamp(32px,4.8vw,52px);line-height:1.07;letter-spacing:-.015em;
+  color:var(--ink-strong);margin:0 0 22px;}
+h1 em{font-style:italic;font-weight:400;color:var(--ink);}
+.lede{font-size:17.5px;max-width:640px;margin:0;color:var(--ink);}
+figure{margin:40px 0;}
+.fig-side{display:grid;grid-template-columns:minmax(0,520px) 220px;gap:26px;align-items:start;}
+.fig-side img{display:block;width:100%;height:auto;border-radius:6px;}
+figcaption{font-size:12px;line-height:1.55;color:var(--stone);}
+.fig-stack{display:block;margin:44px 0;max-width:390px;}
+.fig-stack.wide{max-width:520px;}
+.fig-stack img{display:block;width:100%;height:auto;border-radius:6px;}
+.fig-stack figcaption{margin-top:12px;max-width:660px;}
+.fig-pair{display:grid;grid-template-columns:1fr 1fr;gap:22px;max-width:760px;margin:44px 0;}
+.fig-pair figure{margin:0;} .fig-pair img{display:block;width:100%;height:auto;border-radius:6px;}
+.fig-pair figcaption{margin-top:12px;}
+.essay{max-width:760px;padding:20px 0 8px;}
+.essay h2,.kicker{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--stone);
+  font-weight:600;margin:44px 0 18px;}
+.essay p{font-size:16.5px;margin:0 0 20px;color:var(--ink);}
+a.inline{color:var(--ink-strong);text-decoration:underline;text-decoration-color:var(--stone);
+  text-underline-offset:2px;transition:text-decoration-color .2s var(--ease);}
+a.inline:hover{text-decoration-color:var(--ink);}
+.essay em{font-style:italic;}
+.cards-section{margin:56px 0 20px;}
+.cards-head{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--stone);
+  font-weight:600;margin:0 0 22px;}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
+.card{position:relative;display:flex;flex-direction:column;justify-content:flex-end;
+  aspect-ratio:3/4;border-radius:6px;overflow:hidden;text-decoration:none;color:#fff;background:var(--ink-strong);}
+.card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s var(--ease);}
+.card::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(30,28,28,.82) 0%,rgba(30,28,28,.34) 46%,rgba(30,28,28,.12) 100%);}
+.card:hover img{transform:scale(1.04);}
+.card .c-inner{position:relative;z-index:1;padding:20px 18px 22px;}
+.card h3{font-size:19px;font-weight:500;letter-spacing:-.01em;margin:0 0 8px;}
+.card p{font-size:12.5px;line-height:1.5;margin:0 0 14px;color:rgba(255,255,255,.86);}
+.card .more{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:#fff;
+  border:1px solid rgba(255,255,255,.55);border-radius:100px;padding:6px 13px;display:inline-block;transition:all .2s var(--ease);}
+.card:hover .more{background:#fff;color:var(--ink-strong);border-color:#fff;}
+.journal{margin:64px 0 40px;padding:40px 0 8px;border-top:1px solid var(--hair);
+  display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;}
+.journal p{font-size:15.5px;color:var(--ink);margin:0 0 20px;}
+.dl{font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--ink-strong);
+  border:1px solid var(--ink-strong);border-radius:100px;padding:9px 18px;text-decoration:none;
+  display:inline-block;transition:all .2s var(--ease);}
+.dl:hover{background:var(--ink-strong);color:#fff;}
+.row{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 0;}
+.scope{margin:40px 0 0;padding:20px 22px;background:var(--panel);border-radius:6px;max-width:760px;}
+.scope p{font-size:14.5px;margin:0 0 10px;} .scope p:last-child{margin:0;}
+.scope strong{color:var(--ink-strong);font-weight:600;}
+.sources{max-width:760px;margin:44px 0 0;}
+.sources ol{margin:0;padding-left:20px;}
+.sources li{font-size:13px;color:var(--ink);margin:0 0 8px;overflow-wrap:anywhere;}
+.grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;margin:30px 0 16px;max-width:900px;}
+a.tile{position:relative;overflow:hidden;aspect-ratio:8.5/11;border:1px solid var(--hair);border-radius:6px;
+  background:var(--paper);display:flex;flex-direction:column;justify-content:flex-end;align-items:center;
+  padding:10px;text-decoration:none;transition:border-color .2s var(--ease);}
+a.tile:hover{border-color:var(--stone);}
+a.tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+a.tile .n{position:relative;font-size:13px;font-weight:600;letter-spacing:.08em;color:var(--ink-strong);
+  background:rgba(255,255,255,.9);padding:0 7px;border-radius:4px;}
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin:30px 0 12px;}
+.steps.one{grid-template-columns:minmax(0,420px);}
+.step{border:1px solid var(--hair);border-radius:6px;padding:16px 16px 18px;}
+.step svg{display:block;width:100%;height:auto;max-height:190px;}
+.step p{margin:10px 0 0;font-size:14.5px;color:var(--ink);}
+.num{display:inline-block;font-weight:600;color:var(--ink-strong);margin-right:9px;}
+.ln{fill:none;stroke:#454344;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.sh{stroke:#454344;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round}
+.cr{fill:none;stroke:#454344;stroke-width:1.3;stroke-dasharray:5 4;stroke-linecap:round;stroke-linejoin:round}
+.ar{fill:none;stroke:#454344;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+footer{border-top:1px solid var(--hair);margin-top:48px;padding:26px 0 44px;
+  display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;}
+footer .fnav{display:flex;gap:18px;flex-wrap:wrap;}
+footer a{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--stone);
+  text-decoration:none;font-weight:600;transition:color .2s var(--ease);}
+footer a:hover{color:var(--ink);}
+footer .copy{font-size:12px;color:var(--stone);}
+@media(max-width:860px){.steps{grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media(max-width:720px){
+  .fig-side{grid-template-columns:1fr;}
+  .cards{grid-template-columns:1fr 1fr;}
+  .journal{grid-template-columns:1fr;gap:24px;}
+  .grid{grid-template-columns:repeat(3,minmax(0,1fr));}
+  .fig-pair{grid-template-columns:1fr;}
+}
+@media(max-width:620px){.hero{padding:34px 0 18px;} .wrap{padding:0 18px;}}
+@media(max-width:460px){.cards{grid-template-columns:1fr;} .steps{grid-template-columns:1fr;} .grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav class="topbar" aria-label="Seedling Pages">
+  <a class="mark" href="index.html">Seedling&nbsp;Pages</a>
+  <div class="navlinks"><a href="the-pages.html">The Pages</a><a href="folding-and-sowing.html">Folding &amp; Sowing</a><a href="weaving.html" aria-current="page">Weaving</a><a href="the-root-goes-first.html">The Root Goes First</a></div>
+</nav>
+
+<header class="hero">
+  <p class="eyebrow">Weaving</p>
+  <h1>Over and <em>under</em></h1>
+  <p class="lede">The box goes into the ground. The strip stays with you. After a few pages you have a few, and they weave into a small square of colour with no picture in it.</p>
+</header>
+
+<div class="steps one"><div class="step"><svg viewBox="0 0 200 170" role="img" aria-label="Step 1: When you are ready, weave your strips, over and under."><rect class="sh" x="51" y="10" width="26" height="150" fill="#f1efed"/><rect class="sh" x="87" y="10" width="26" height="150" fill="#ffffff"/><rect class="sh" x="123" y="10" width="26" height="150" fill="#dedbd8"/><rect class="sh" x="28" y="36" width="144" height="26" fill="#dedbd8"/><rect class="sh" x="28" y="72" width="144" height="26" fill="#bdb9b6"/><rect class="sh" x="28" y="108" width="144" height="26" fill="#f1efed"/><rect x="52" y="34.5" width="24" height="29" fill="#f1efed"/><rect x="124" y="34.5" width="24" height="29" fill="#dedbd8"/><rect x="88" y="70.5" width="24" height="29" fill="#ffffff"/><rect x="52" y="106.5" width="24" height="29" fill="#f1efed"/><rect x="124" y="106.5" width="24" height="29" fill="#dedbd8"/><path class="ln" d="M51 34 V64 M77 34 V64 M123 34 V64 M149 34 V64 M87 70 V100 M113 70 V100 M51 106 V136 M77 106 V136 M123 106 V136 M149 106 V136"/></svg><p><span class="num">1</span>When you are ready, weave your strips, over and under.</p></div></div>
+
+<!-- VIDEO SLOT: weaving video goes here. -->
+
+<figure class="fig-side">
+  <img src="images/layered-rock.jpg" alt="Pale stone rises in thin, cracked layers against a clear blue sky." />
+  <figcaption>A ridge of pale stone rises against a clear blue sky. It is built of thin layers laid down one over another and since tilted, cracked and worn back, so each band shows its edge. <!-- CREDIT: add "Photography by …" here once the photographer is confirmed. --></figcaption>
+</figure>
+
+<section class="essay">
+  <h2>How to weave</h2>
+  <p>Wait until you have at least four strips. Lay half of them side by side on the table, touching, running away from you. Take another strip and pass it across them: over the first, under the second, over the third. The next strip starts the other way, under and then over. Push each one up snug against the last.</p>
+  <p>Each strip is about two and a half inches wide and as long as the page is wide, so three going one way and three the other make a square of about seven and a half inches. If you&rsquo;d like a finer weave, cut a strip in half along its length. A dab of glue or a stitch at each corner holds the square, or you can leave it loose and add to it as more pages come.</p>
+  <p>There is no pattern to follow. Colours you chose on different days end up beside each other and cross. The lines from one plant run into the lines from another. Nothing in the square is a picture, and nothing in it needs to be.</p>
+  <p>The workbook ends with an empty frame for your weaving, if you&rsquo;d like somewhere to keep it.</p>
+  <div class="row"><a class="dl" href="files/seedling-pages-workbook.pdf" download>Download the workbook</a></div>
+</section>
+
+<div class="fig-pair">
+  <figure>
+    <img src="images/white-rock-water.jpg" alt="Smooth white granite rises in rounded folds above a pool of clear water." loading="lazy" />
+    <figcaption>White granite, worn into rounded folds and channels, rises from a shallow pool. A tuft of dry grass grows from a crack near the top. <!-- CREDIT: add "Photography by …" here once the photographer is confirmed. --></figcaption>
+  </figure>
+  <figure>
+    <img src="images/sandstone-crevice.jpg" alt="Slabs of sand-coloured stone overlap, with a deep shadowed gap between them." loading="lazy" />
+    <figcaption>Two slabs of sand-coloured stone lie one over the other, a long dark gap running between them. Small round hollows pit the lower slab. <!-- CREDIT: add "Photography by …" here once the photographer is confirmed. --></figcaption>
+  </figure>
+</div>
+
+<figure class="fig-stack wide">
+  <img src="images/sunlit-water.jpg" alt="Sunlight glitters on clear, shallow water running between dark rocks." loading="lazy" />
+  <figcaption>Clear, shallow water runs between dark rocks. The sun breaks into hundreds of small points of light on its surface, and the ripples cross and recross over the sand below. <!-- CREDIT: add "Photography by …" here once the photographer is confirmed. --></figcaption>
+</figure>
+
+<footer>
+  <span class="copy">&copy; 2026 Therapeutic Studio</span>
+  <div class="fnav">
+    <a href="gratitude.html">Gratitude</a>
+    <a href="https://www.instagram.com/therapeuticstudio.ca/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.youtube.com/@therapeuticstudiodotca" target="_blank" rel="noopener">YouTube</a>
+    <a href="https://slowleaf.ca/" target="_blank" rel="noopener">Slow Leaf</a>
+    <a href="https://otherbodies.ca/" target="_blank" rel="noopener">Other Bodies</a>
+    <a href="https://www.therapeuticstudio.ca/" target="_blank" rel="noopener">therapeuticstudio.ca</a>
+  </div>
+</footer>
+</div>
+</body>
+</html>
